@@ -1,0 +1,546 @@
+<!DOCTYPE HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Jingyun Liang</title>
+
+  <meta name="author" content="Jingyun Liang">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="icon" type="image/png" href="images/icon.png">
+</head>
+
+<body>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p style="text-align:center">
+                <name>Jingyun Liang</name>
+              </p>
+              <p>I am currently a PhD Student at <a href="https://vision.ee.ethz.ch/">Computer Vision Lab</a>, <a href="https://ethz.ch/en.html">ETH Zürich</a>, Switzerland. I am co-supervised by Prof. <a href="https://scholar.google.com/citations?user=TwMib_QAAAAJ&hl=en">Luc Van Gool</a> and Prof. <a href="http://people.ee.ethz.ch/~timofter/">Radu Timofte</a>. I also work closely with Dr. <a href="https://cszn.github.io/">Kai Zhang</a>. I mainly focus on low-level vision research, especially on image and video restoration, such as super-resolution, deblurring and denoising.
+              </p>
+              <p style="text-align:center">
+                <a href="mailto:jingyunliang12@gmail.com">Email</a> &nbsp/&nbsp
+                <a href="https://scholar.google.com/citations?hl=en&user=3-Hz9BgAAAAJ&view_op=list_works&sortby=pubdate">Google Scholar</a> &nbsp/&nbsp
+                <a href="https://github.com/jingyunliang/">Github</a>
+              </p>
+            </td>
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <a href="images/profile_large.jpg"><img style="width:80%;max-width:80%" alt="profile photo" src="images/profile.jpg" class="hoverZoomLink"></a>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+          <td style="padding:20px;width:100%;vertical-align:middle">
+            <heading>News</heading>
+            <ul>
+              <li>2022-10-04: Our new paper <a href="https://github.com/JingyunLiang/RVRT">RVRT (NeurlPS2022)</a> achieves SOTA video restoration results with balanced size, memory and runtime.</font></li>
+              <li>2022-08-30: See our papers on real-world image denoising (<a href="https://github.com/cszn/SCUNet">SCUNet</a>) and video denoising (<a href="https://github.com/caojiezhang/ReViD">ReViD</a>).</font></li>
+              <li>2022-07-30: Three papers, including <a href="https://github.com/AHupuJR/EFNet">EFNet</a> (event-based image deblurring, oral), <a href="https://github.com/caojiezhang/DATSR">DATSR</a> (reference image SR) and <a href="https://github.com/caojiezhang/DAVSR">DAVSR</a> (video SR), accepted by ECCV2022.</font></li>
+              <li>2022-01-28: Our new paper <a href="https://github.com/JingyunLiang/VRT">VRT</a> outperforms previous video SR/ deblurring/ denoising/ frame interpolation/ space-time video SR methods by up to <font size="2" face="verdana" color="red"> 2.16dB! </font></li>
+              <li>2021-10-20: <a href="https://github.com/JingyunLiang/SwinIR">SwinIR</a> is awarded the best paper prize in ICCV-AIM2021.</li>
+              <li>2021-08-01: Three papers (<a href="https://github.com/JingyunLiang/HCFlow">HCFlow</a>, <a href="https://github.com/JingyunLiang/MANet">MANet</a> and <a href="https://github.com/cszn/BSRGAN">BSRGAN</a>) accepted by ICCV2021.</li>
+              <li>2021-03-29: One paper (<a href="https://github.com/JingyunLiang/FKP">FKP</a>) accepted by CVPR2021.</li>
+
+            </ul>
+          </td>
+          </td>
+        </tr>
+      </tbody></table>
+
+      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Research</heading>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+
+
+
+
+    <tr onmouseout="refnerf_stop()" onmouseover="refnerf_start()"">
+      <td style="padding:0px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='refnerf_image'><video  width=100% height=60% muted autoplay loop>
+          <source src="images/no.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/ReViD.jpeg' width="160" height="90">
+        </div>
+        <script type="text/javascript">
+          function refnerf_start() {
+            document.getElementById('refnerf_image').style.opacity = "1";
+          }
+
+          function refnerf_stop() {
+            document.getElementById('refnerf_image').style.opacity = "0";
+          }
+          refnerf_stop()
+        </script>
+      </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://github.com/caojiezhang/ReViD">
+            <papertitle>Practical Real Video Denoising with Realistic Degradation Model</papertitle>
+          </a>
+          <br>
+          Jiezhang Cao, <strong>Jingyun Liang</strong>, Kai Zhang, Wenguan Wang, Qin Wang, Yulun Zhang, Hao Tang and Luc Van Gool
+          <br>
+          <em>arxiv</em>, 2022
+          <br>
+          <a href="https://arxiv.org/pdf/2208.11803.pdf">arXiv</a> /
+          <a href="https://github.com/caojiezhang/ReViD">code</a> /
+          <a href="https://github.com/caojiezhang/ReViD">dataset</a> /
+          <a href="data/default.bib">bibtex</a>
+          <p></p>
+          <p>A practical real-world video denoising model with impressive results on real-world videos.</p>
+        </td>
+      </tr>
+
+    <tr onmouseout="refnerf_stop()" onmouseover="refnerf_start()"">
+      <td style="padding:0px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='refnerf_image'><video  width=100% height=60% muted autoplay loop>
+          <source src="images/no.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/DAVSR.jpeg' width="160" height="90">
+        </div>
+        <script type="text/javascript">
+          function refnerf_start() {
+            document.getElementById('refnerf_image').style.opacity = "1";
+          }
+
+          function refnerf_stop() {
+            document.getElementById('refnerf_image').style.opacity = "0";
+          }
+          refnerf_stop()
+        </script>
+      </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://github.com/caojiezhang/DAVSR">
+            <papertitle>Towards Interpretable Video Super-Resolution via Alternating Optimization</papertitle>
+          </a>
+          <br>
+          Jiezhang Cao, <strong>Jingyun Liang</strong>, Kai Zhang, Wenguan Wang, Qin Wang, Yulun Zhang, Hao Tang and Luc Van Gool
+          <br>
+          <em>European Conference on Computer Vision (<strong>ECCV</strong>)</em>, 2022
+          <br>
+          <a href="https://arxiv.org/pdf/2207.10765.pdf">arXiv</a> /
+          <a href="https://github.com/caojiezhang/DAVSR">code</a> /
+          <a href="data/default.bib">bibtex</a>
+          <p></p>
+          <p>An interpretable method based on alternating optimization. It takes low-framerate low-resolution blurry videos as inputs and can deal with video deblurring, frame interpolation and super-resolution problems in a joint way.</p>
+        </td>
+      </tr>
+
+    <tr onmouseout="refnerf_stop()" onmouseover="refnerf_start()"">
+      <td style="padding:0px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='refnerf_image'><video  width=100% height=60% muted autoplay loop>
+          <source src="images/no.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/DATSR.jpeg' width="160" height="90">
+        </div>
+        <script type="text/javascript">
+          function refnerf_start() {
+            document.getElementById('refnerf_image').style.opacity = "1";
+          }
+
+          function refnerf_stop() {
+            document.getElementById('refnerf_image').style.opacity = "0";
+          }
+          refnerf_stop()
+        </script>
+      </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://github.com/caojiezhang/DATSR">
+            <papertitle>Reference-based Image Super-Resolution with Deformable Attention Transformer</papertitle>
+          </a>
+          <br>
+          Jiezhang Cao, <strong>Jingyun Liang</strong>, Kai Zhang, Yawei Li, Yulun Zhang, Wenguan Wang and Luc Van Gool
+          <br>
+          <em>European Conference on Computer Vision (<strong>ECCV</strong>)</em>, 2022
+          <br>
+          <a href="https://arxiv.org/pdf/2207.11938.pdf">arXiv</a> /
+          <a href="https://github.com/caojiezhang/DATSR">code</a> /
+          <a href="data/default.bib">bibtex</a>
+          <p></p>
+          <p>A reference-based image super-resolution Transformer with state-of-the-art performance. It consists of texture feature encoder module, reference-based deformable attention module and residual feature aggregation module.</p>
+        </td>
+      </tr>
+
+    <tr onmouseout="refnerf_stop()" onmouseover="refnerf_start()">
+      <td style="padding:0px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='refnerf_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="images/no.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/MEFNet.jpg' width="160">
+        </div>
+        <script type="text/javascript">
+          function refnerf_start() {
+            document.getElementById('refnerf_image').style.opacity = "1";
+          }
+
+          function refnerf_stop() {
+            document.getElementById('refnerf_image').style.opacity = "0";
+          }
+          refnerf_stop()
+        </script>
+      </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://arxiv.org/pdf/2112.00167.pdf">
+            <papertitle>Event-Based Fusion for Motion Deblurring with Cross-modal Attention</papertitle>
+          </a>
+          <br>
+                Lei Sun, Christos Sakaridis, <strong>Jingyun Liang</strong>, Qi Jiang, Kailun Yang, Peng Sun, Yaozu Ye, Kaiwei Wang and Luc Van Gool
+          <br>
+          <em>European Conference on Computer Vision (<strong>ECCV</strong>)</em>, 2022
+          <br>
+          <a href="https://arxiv.org/pdf/2112.00167.pdf">arXiv</a> /
+          <a href="https://github.com/AHupuJR/EFNet">code</a> /
+          <a href="https://github.com/AHupuJR/EFNet">dataset</a> /
+          <a href="data/default.bib">bibtex</a>
+          <p></p>
+          <p>An unfolded end-to-end event camera-based motion deblurring method; a High-Quality Blur (HQBlur) dataset for event camera-based deblurring.</p>
+        </td>
+      </tr>
+
+    <tr onmouseout="refnerf_stop()" onmouseover="refnerf_start()" bgcolor="#ffffd0">
+      <td style="padding:0px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='refnerf_image'><video  width=100% height=60% muted autoplay loop>
+          <source src="images/VRT.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/RVRT.jpeg' width="160" height="90">
+        </div>
+        <script type="text/javascript">
+          function refnerf_start() {
+            document.getElementById('refnerf_image').style.opacity = "1";
+          }
+
+          function refnerf_stop() {
+            document.getElementById('refnerf_image').style.opacity = "0";
+          }
+          refnerf_stop()
+        </script>
+      </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://github.com/JingyunLiang/RVRT">
+            <papertitle>Recurrent Video Restoration Transformer with Guided Deformable Attention</papertitle>
+          </a>
+          <br>
+          <strong>Jingyun Liang</strong>, Yuchen Fan, Xiaoyu Xiang, Rakesh Ranjan, Eddy Ilg, Simon Green, Jiezhang Cao, Kai Zhang, Radu Timofte, Luc Van Gool<br>
+    <em>arxiv</em>, 2022
+          <br>
+          <a href="https://arxiv.org/pdf/2206.02146.pdf">arXiv</a> /
+          <a href="https://github.com/JingyunLiang/RVRT">code</a> /
+          <a href="data/default.bib">bibtex</a>
+          <p></p>
+          <p>A transformer-based model that jointly extracts, aligns, and fuses frame features at multiple scales; state-of-the-art performance in video SR/ deblurring/ denoising.</p>
+        </td>
+      </tr>
+
+    <tr onmouseout="refnerf_stop()" onmouseover="refnerf_start()"">
+      <td style="padding:0px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='refnerf_image'><video  width=100% height=60% muted autoplay loop>
+          <source src="images/no.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/SCUNet.jpeg' width="160" height="90">
+        </div>
+        <script type="text/javascript">
+          function refnerf_start() {
+            document.getElementById('refnerf_image').style.opacity = "1";
+          }
+
+          function refnerf_stop() {
+            document.getElementById('refnerf_image').style.opacity = "0";
+          }
+          refnerf_stop()
+        </script>
+      </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://github.com/cszn/SCUNet">
+            <papertitle>Practical Blind Denoising via Swin-Conv-UNet and Data Synthesis</papertitle>
+          </a>
+          <br>
+          Kai Zhang, Yawei Li, <strong>Jingyun Liang</strong>, Jiezhang Cao, Yulun Zhang, Hao Tang, Radu Timofte and Luc Van Gool
+          <br>
+    <em>arxiv</em>, 2022
+          <br>
+          <a href="https://arxiv.org/pdf/2203.13278.pdf">arXiv</a> /
+          <a href="https://github.com/cszn/SCUNet">code</a> /
+          <a href="data/default.bib">bibtex</a>
+          <p></p>
+          <p>A practical real-world image denoising model with impressive results on real-world images.</p>
+        </td>
+      </tr>
+
+    <tr onmouseout="refnerf_stop()" onmouseover="refnerf_start()" bgcolor="#ffffd0">
+      <td style="padding:0px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='refnerf_image'><video  width=100% height=60% muted autoplay loop>
+          <source src="images/VRT.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/VRT.jpeg' width="160" height="90">
+        </div>
+        <script type="text/javascript">
+          function refnerf_start() {
+            document.getElementById('refnerf_image').style.opacity = "1";
+          }
+
+          function refnerf_stop() {
+            document.getElementById('refnerf_image').style.opacity = "0";
+          }
+          refnerf_stop()
+        </script>
+      </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://github.com/JingyunLiang/VRT">
+            <papertitle>VRT: A Video Restoration Transformer</papertitle>
+          </a>
+          <br>
+          <strong>Jingyun Liang</strong>, Jiezhang Cao, Yuchen Fan, Kai Zhang, Rakesh Ranjan, Yawei Li, Radu Timofte and Luc Van Gool
+          <br>
+    <em>arxiv</em>, 2022
+          <br>
+          <a href="https://arxiv.org/pdf/2201.12288.pdf">arXiv</a> /
+          <a href="https://github.com/JingyunLiang/VRT">code</a> /
+          <a href="data/default.bib">bibtex</a>
+          <p></p>
+          <p>A transformer-based model that jointly extracts, aligns, and fuses frame features at multiple scales; state-of-the-art performance in video SR/ deblurring/ denoising/ frame interpolation/ space-time video SR.</p>
+        </td>
+      </tr>
+
+    <tr onmouseout="refnerf_stop()" onmouseover="refnerf_start()" bgcolor="#ffffd0">
+      <td style="padding:0px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='refnerf_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="images/no.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/SwinIR.jpeg' width="160" height="100">
+        </div>
+        <script type="text/javascript">
+          function refnerf_start() {
+            document.getElementById('refnerf_image').style.opacity = "1";
+          }
+
+          function refnerf_stop() {
+            document.getElementById('refnerf_image').style.opacity = "0";
+          }
+          refnerf_stop()
+        </script>
+      </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://github.com/JingyunLiang/SwinIR">
+            <papertitle>SwinIR: Image Restoration Using Swin Transformer</papertitle>
+          </a>
+          <br>
+          <strong>Jingyun Liang</strong>, Jiezhang Cao, Guolei Sun, Kai Zhang, Luc Van Gool and Radu Timofte
+          <br>
+    <em>IEEE/CVF International Conference on Computer Vision Workshops (<strong>ICCVW</strong>)</em>, 2021
+          <br>
+          <a href="https://arxiv.org/pdf/2108.10257.pdf">arXiv</a> /
+          <a href="https://github.com/JingyunLiang/SwinIR">code</a> /
+          <a href="https://colab.research.google.com/gist/JingyunLiang/a5e3e54bc9ef8d7bf594f6fee8208533/swinir-demo-on-real-world-image-sr.ipynb">online demo</a> /
+          <a href="data/default.bib">bibtex</a>
+          <p></p>
+          <p>A transformer-based image restoration that allows content-based interactions and long-range dependency modelling; state-of-the-art performance on image SR, denoising and JPEG compression artifact reduction.</p>
+        </td>
+      </tr>
+
+    <tr onmouseout="refnerf_stop()" onmouseover="refnerf_start()">
+      <td style="padding:0px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='refnerf_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="images/no.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/BSRGAN.jpg' width="160" height="110">
+        </div>
+        <script type="text/javascript">
+          function refnerf_start() {
+            document.getElementById('refnerf_image').style.opacity = "1";
+          }
+
+          function refnerf_stop() {
+            document.getElementById('refnerf_image').style.opacity = "0";
+          }
+          refnerf_stop()
+        </script>
+      </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://github.com/cszn/BSRGAN">
+            <papertitle>Designing a Practical Degradation Model for Deep Blind Image Super-Resolution</papertitle>
+          </a>
+          <br>
+          Kai Zhang, <strong>Jingyun Liang</strong>, Luc Van Gool and Radu Timofte
+          <br>
+          <em>IEEE/CVF International Conference on Computer Vision (<strong>ICCV</strong>)</em>, 2021
+          <br>
+          <a href="https://arxiv.org/pdf/2103.14006.pdf">arXiv</a> /
+          <a href="https://github.com/cszn/BSRGAN">code</a> /
+          <a href="https://colab.research.google.com/gist/JingyunLiang/a5e3e54bc9ef8d7bf594f6fee8208533/swinir-demo-on-real-world-image-sr.ipynb">online demo</a> /
+          <a href="data/default.bib">bibtex</a>
+          <p></p>
+          <p>The first practical real-world degradation model for training real-world image SR models; impressive results on real-world images.</p>
+        </td>
+      </tr>
+
+    <tr onmouseout="refnerf_stop()" onmouseover="refnerf_start()">
+      <td style="padding:0px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='refnerf_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="images/no.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/HCFlow.jpg' width="160" height="140">
+        </div>
+        <script type="text/javascript">
+          function refnerf_start() {
+            document.getElementById('refnerf_image').style.opacity = "1";
+          }
+
+          function refnerf_stop() {
+            document.getElementById('refnerf_image').style.opacity = "0";
+          }
+          refnerf_stop()
+        </script>
+      </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://github.com/JingyunLiang/HCFlow">
+            <papertitle>Hierarchical Conditional Flow: A Unified Framework for Image Super-Resolution and Image Rescaling</papertitle>
+          </a>
+          <br>
+          <strong>Jingyun Liang</strong>, Andreas Lugmayr, Kai Zhang, Martin Danelljan, Luc Van Gool and Radu Timofte
+          <br>
+    <em>IEEE/CVF International Conference on Computer Vision (<strong>ICCV</strong>)</em>, 2021
+          <br>
+          <a href="https://arxiv.org/pdf/2108.05301.pdf">arXiv</a> /
+          <a href="https://github.com/JingyunLiang/HCFlow">code</a> /
+          <a href="https://colab.research.google.com/gist/JingyunLiang/cdb3fef89ebd174eaa43794accb6f59d/hcflow-demo-on-x8-face-image-sr.ipynb">online demo</a> /
+          <a href="data/default.bib">bibtex</a>
+          <p></p>
+          <p>It learns a bijective mapping between HR and LR image pairs by modelling low and high-frequency components; a unified framework for image SR and image rescaling.</p>
+        </td>
+      </tr>
+
+    <tr onmouseout="refnerf_stop()" onmouseover="refnerf_start()">
+      <td style="padding:0px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='refnerf_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="images/no.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/MANet.jpg' width="160">
+        </div>
+        <script type="text/javascript">
+          function refnerf_start() {
+            document.getElementById('refnerf_image').style.opacity = "1";
+          }
+
+          function refnerf_stop() {
+            document.getElementById('refnerf_image').style.opacity = "0";
+          }
+          refnerf_stop()
+        </script>
+      </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://github.com/JingyunLiang/MANet">
+            <papertitle>Mutual Affine Network for Spatially Variant Kernel Estimation in Blind Image Super-Resolution</papertitle>
+          </a>
+          <br>
+          <strong>Jingyun Liang</strong>, Guolei Sun, Kai Zhang, Luc Van Gool and Radu Timofte
+          <br>
+          <em>IEEE/CVF International Conference on Computer Vision (<strong>ICCV</strong>)</em>, 2021
+          <br>
+          <a href="https://arxiv.org/pdf/2108.05302.pdf">arXiv</a> /
+          <a href="https://github.com/JingyunLiang/MANet">code</a> /
+          <a href="https://colab.research.google.com/gist/JingyunLiang/4ed2524d6e08343710ee408a4d997e1c/manet-demo-on-spatially-variant-kernel-estimation.ipynb">online demo</a> /
+          <a href="data/default.bib">bibtex</a>
+          <p></p>
+          <p>A kernel estimation network with mutual affine convolution for spatially variant kernels; state-of-the-art blind SR performance.</p>
+        </td>
+      </tr>
+
+    <tr onmouseout="refnerf_stop()" onmouseover="refnerf_start()">
+      <td style="padding:0px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='refnerf_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="images/no.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/FKP.jpg' width="160" height="110">
+        </div>
+        <script type="text/javascript">
+          function refnerf_start() {
+            document.getElementById('refnerf_image').style.opacity = "1";
+          }
+
+          function refnerf_stop() {
+            document.getElementById('refnerf_image').style.opacity = "0";
+          }
+          refnerf_stop()
+        </script>
+      </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://github.com/JingyunLiang/FKP">
+            <papertitle>Flow-based Kernel Prior with Application to Blind Super-Resolution</papertitle>
+          </a>
+          <br>
+          <strong>Jingyun Liang</strong>, Kai Zhang, Shuhang Gu, Luc Van Gool, Radu Timofte
+          <br>
+          <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (<strong>CVPR</strong>)</em>, 2021
+          <br>
+          <a href="https://arxiv.org/pdf/2103.15977.pdf">arXiv</a> /
+          <a href="https://github.com/JingyunLiang/FKP">code</a> /
+          <a href="data/default.bib">bibtex</a>
+          <p></p>
+          <p>A normalizing flow-based kernel prior for kernel modeling; state-of-the-art performance in unsupervised blind SR.</p>
+        </td>
+      </tr>
+
+        </tbody></table>
+
+
+</tbody></table>
+
+
+
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:0px">
+              <br>
+              <p style="text-align:center;font-size:small;">
+                  Template from <a href="http://jonbarron.info">Jon Barron
+                <br>
+              </p>
+                <a href="https://www.free-count.com/" target="blank"><img src="https://www.free-count.com/countme.php?id=2157071&la=1000&no=1&fn=7&rs=60" title="Free Counter" style="border:0;width:1px;height:1px"></a>
+            </td>
+          </tr>
+
+        </tbody></table>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
