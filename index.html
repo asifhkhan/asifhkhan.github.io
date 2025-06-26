@@ -171,6 +171,43 @@ Resolution</papertitle>
       </tr>
 
 
+<tr onmouseout="refnerf_stop()" onmouseover="refnerf_start()"">
+      <td style="padding:0px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='refnerf_image'><video  width=100% height=60% muted autoplay loop>
+          <img src='images/lbkenet.png' width="160" height="90">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/lbkenet.png' width="160" height="90">
+        </div>
+        <script type="text/javascript">
+          function refnerf_start() {
+            document.getElementById('refnerf_image').style.opacity = "1";
+          }
+
+          function refnerf_stop() {
+            document.getElementById('refnerf_image').style.opacity = "0";
+          }
+          refnerf_stop()
+        </script>
+      </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://github.com/caojiezhang/ReViD">
+            <papertitle>Lightweight Implicit Blur Kernel Estimation Network for Blind Image Super-Resolution</papertitle>
+          </a>
+          <br>
+          <strong>Asif Hussain Khan</strong,Christian Micheloni, Niki Martinel>
+          <br>
+          <em> Information Journal </em>, 2023
+          <br>
+          <a href="https://www.mdpi.com/2078-2489/14/5/296">Information</a> /
+          <a href="https://github.com/asifhkhan">code</a> /
+          <a href="https://github.com/asifhkhan">dataset</a> /
+          <a href="data/default.bib">bibtex</a>
+          <p></p>
+          <p> We propose a lightweight blind super-resolution (Blind-SR) model that estimates blur kernels and restores HR images without ground-truth supervision. Our method uses a Super Resolver and an Estimator Network trained with a novel loss for joint kernel and image recovery. We further extend our work to handle anisotropic Gaussian kernels for more complex degradations. Experiments show our approach is efficient and performs well with significantly fewer parameters than state-of-the-art models.</p>
+        </td>
+      </tr>
 
 
           
