@@ -129,3 +129,24 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+.menu {
+  display: flex;
+  justify-content: center; /* This centers the items horizontally */
+  gap: 30px; /* This adds space between the buttons */
+  margin-top: 20px; /* Optional: adds spacing from the top */
+}
+
+.menu a {
+  text-decoration: none;
+  color: #000; /* Change color as you prefer */
+  font-size: 18px; /* Adjust size as needed */
+  padding: 10px 20px;
+  border: 1px solid #000; /* Optional: gives a button-like look */
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.menu a:hover {
+  background-color: #ddd; /* Optional: hover effect */
+}
