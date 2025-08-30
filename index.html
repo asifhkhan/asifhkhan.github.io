@@ -74,18 +74,6 @@ body.dark-mode .theme-icon {
 }
 </style>
 
-  <script>
-  const navbar = document.querySelector('.navbar');
-
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {   // adjust value as needed
-      navbar.classList.add('scrolled');
-    } else {
-      navbar.classList.remove('scrolled');
-    }
-  });
-</script>
-  
 </head>
 <body>
 
@@ -302,6 +290,19 @@ body.dark-mode .theme-icon {
     }
   });
 </script>
+
+    <script>
+  const navbar = document.querySelector('.navbar');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {   // adjust value as needed
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
+</script>
+  
 
 
 </body>
