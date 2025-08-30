@@ -68,11 +68,11 @@ body {
 }
 
 .home-image img {
-  max-width: 80%;      /* fixed size for profile photo */
-  width: 80%;           
-  height: auto;          
-  border-radius: 10px;   
-  display: block;        
+  width: 80%;      /* sets a fixed, clean width */
+  height: auto;      /* keeps aspect ratio */
+  max-width: 80%;   /* scales down on small screens */
+  border-radius: 10px; /* optional rounded corners */
+  display: block;    /* avoids extra spacing */
 }
 
 .contact-links a {
