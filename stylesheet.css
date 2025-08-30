@@ -129,10 +129,11 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
-
-/* Navbar styling */
+/* Horizontal Navbar with hover effects */
 .navbar {
-  text-align: center;
+  display: flex;          /* horizontal layout */
+  justify-content: center; /* center the links */
+  gap: 20px;              /* spacing between links */
   margin-top: 20px;
 }
 
@@ -141,7 +142,6 @@ span.highlight {
   text-decoration: none;
   color: #333;
   padding: 10px 15px;
-  margin: 0 5px;
   transition: all 0.3s ease;
   position: relative;
 }
