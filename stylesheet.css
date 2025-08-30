@@ -68,8 +68,8 @@ body {
 }
 
 .home-image img {
-  max-width: 250px;      /* fixed size for profile photo */
-  width: 100%;           
+  max-width: 80%;      /* fixed size for profile photo */
+  width: 80%;           
   height: auto;          
   border-radius: 10px;   
   display: block;        
