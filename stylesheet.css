@@ -129,39 +129,4 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
-/* Horizontal Navbar with hover effects */
-.navbar {
-  display: flex;          /* horizontal layout */
-  justify-content: center; /* center the links */
-  gap: 20px;              /* spacing between links */
-  margin-top: 20px;
-}
 
-.navbar a {
-  font-size: 18px;
-  text-decoration: none;
-  color: #333;
-  padding: 10px 15px;
-  transition: all 0.3s ease;
-  position: relative;
-}
-
-.navbar a:hover {
-  color: #fff;
-  background-color: #007BFF;
-  border-radius: 5px;
-}
-
-.navbar a::after {
-  content: '';
-  display: block;
-  height: 2px;
-  width: 0;
-  background: #007BFF;
-  transition: width 0.3s;
-  margin-top: 5px;
-}
-
-.navbar a:hover::after {
-  width: 100%;
-}
