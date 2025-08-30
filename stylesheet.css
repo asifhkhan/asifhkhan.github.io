@@ -26,7 +26,7 @@ body {
 
 /* Navbar after scroll */
 .navbar.scrolled {
-  background-color: transparent;;   /* solid background */
+  background-color: transparent;   /* solid background */
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
