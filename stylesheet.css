@@ -16,7 +16,7 @@ body {
   justify-content: center;
   gap: 30px;
   padding: 15px 0;
-  background-color: transparent;
+  background-color:  #fff;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -26,7 +26,7 @@ body {
 
 /* Navbar after scroll */
 .navbar.scrolled {
-  background-color: transparent;   /* solid background */
+  background-color:  #fff;   /* solid background */
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
