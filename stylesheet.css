@@ -68,11 +68,12 @@ body {
 }
 
 .home-image img {
-  max-width: 80%;      /* limits width */
-  width: 80%;           /* scales down on smaller screens */
-  height: auto;          /* maintain aspect ratio */
-  border-radius: 10px;   /* optional rounded corners */
-  display: block;        /* removes extra inline spacing */
+  max-width: 250px;      /* fixed size for profile photo */
+  width: 100%;           
+  height: auto;          
+  border-radius: 10px;   
+  display: block;        
+  margin: 0 auto;        /* center image */
 }
 
 .contact-links a {
@@ -85,24 +86,39 @@ body {
   color: #f09228;
 }
 
-/* Publications Grid */
+/* Publications */
 .publications-grid {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  flex-direction: column;  /* vertical layout */
+  gap: 30px;              /* spacing between publications */
 }
 
 .publication-item {
   display: flex;
-  flex: 1 1 350px;
-  gap: 15px;
+  gap: 20px;
   border: 1px solid #ddd;
-  padding: 10px;
+  padding: 15px;
   border-radius: 8px;
+  align-items: flex-start;
+}
+
+.publication-text {
+  flex: 1;
 }
 
 .publication-text strong {
   font-weight: 700;
+  font-size: 16px;
+}
+
+.publication-text p a {
+  color: #1772d0;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.publication-text p a:hover {
+  color: #f09228;
 }
 
 /* Hover video effect */
@@ -110,6 +126,7 @@ body {
   position: relative;
   width: 160px;
   height: 160px;
+  flex-shrink: 0;
 }
 
 .hover-video .video-container video {
@@ -137,7 +154,7 @@ body {
 .achievements-review {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 40px;    /* consistent spacing */
 }
 
 .achievements ul,
