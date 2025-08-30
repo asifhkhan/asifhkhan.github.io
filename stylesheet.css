@@ -68,7 +68,7 @@ body {
 }
 
 .home-image img {
-  max-width: 200px;      /* limits width */
+  max-width: 100px;      /* limits width */
   width: 100%;           /* scales down on smaller screens */
   height: auto;          /* maintain aspect ratio */
   border-radius: 10px;   /* optional rounded corners */
