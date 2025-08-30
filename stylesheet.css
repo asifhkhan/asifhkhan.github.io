@@ -101,7 +101,7 @@ body {
 .publication-item {
   display: flex;
   gap: 15px;
-  border: 1px solid #007BFF; /* border around item */
+  border: 2px solid #007BFF; /* border around the publication item */
   padding: 10px;
   border-radius: 8px;
   align-items: flex-start;
@@ -110,8 +110,7 @@ body {
 .publication-item img {
   width: 160px;       /* fixed width */
   height: 160px;      /* fixed height */
-  object-fit: cover;  /* crop if needed */
-  border: 2px solid #007BFF; /* border around image */
+  object-fit: cover;  /* maintain aspect ratio, crop if needed */
   border-radius: 8px;
   flex-shrink: 0;
 }
