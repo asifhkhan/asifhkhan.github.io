@@ -234,30 +234,33 @@ body.dark-mode .theme-icon {
 
 
   <!-- Achievements & Review Activities Section -->
- <script>
-  const themeToggle = document.getElementById('theme-toggle');
+<script>
   const themeIcon = document.getElementById('theme-icon');
+  const body = document.body;
 
-  const currentTheme = localStorage.getItem('theme');
-
-  if (currentTheme === 'dark') {
-    document.body.classList.add('dark-mode');
-    themeToggle.checked = true;
+  // Load saved theme
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'dark') {
+    body.classList.add('dark-mode');
     themeIcon.classList.replace('fa-moon', 'fa-sun');
+    themeIcon.title = "Toggle light mode";
   }
 
-  themeToggle.addEventListener('change', function () {
-    if (this.checked) {
-      document.body.classList.add('dark-mode');
-      localStorage.setItem('theme', 'dark');
+  themeIcon.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+
+    if (body.classList.contains('dark-mode')) {
       themeIcon.classList.replace('fa-moon', 'fa-sun');
+      themeIcon.title = "Toggle light mode";
+      localStorage.setItem('theme', 'dark');
     } else {
-      document.body.classList.remove('dark-mode');
-      localStorage.setItem('theme', 'light');
       themeIcon.classList.replace('fa-sun', 'fa-moon');
+      themeIcon.title = "Toggle dark mode";
+      localStorage.setItem('theme', 'light');
     }
   });
 </script>
+
 
 </body>
 </html>
