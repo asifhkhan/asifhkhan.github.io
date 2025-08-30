@@ -109,19 +109,22 @@ body {
   padding: 10px;
   align-items: flex-start;
   overflow: hidden; /* ensures image doesn't escape */
+  box-sizing: border-box; /* include padding/border in width */
+  background-color: #fff;
 }
 
 .publication-item img {
-  width: 80px;   /* fixed width */
-  height: 80px;  /* fixed height */
+  width: 160px;
+  height: 160px;
   object-fit: cover;
   border-radius: 8px;
-  flex-shrink: 0; /* prevents shrinking */
-  border: 1px solid #333; /* optional border around image */
+  flex-shrink: 0;
+  border: 1px solid #007BFF; /* image border inside the card */
+  box-sizing: border-box; /* ensures border stays inside container */
 }
 
 .publication-text {
-  flex: 1; /* take remaining space */
+  flex: 1; /* text takes remaining space */
 }
 
 .publication-text strong {
