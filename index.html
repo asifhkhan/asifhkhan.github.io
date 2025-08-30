@@ -73,6 +73,19 @@ body.dark-mode .theme-icon {
   color: #f1c40f; /* Yellowish in dark mode */
 }
 </style>
+
+  <script>
+  const navbar = document.querySelector('.navbar');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {   // adjust value as needed
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
+</script>
+  
 </head>
 <body>
 
