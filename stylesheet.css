@@ -94,33 +94,53 @@ body {
 /* Publications */
 .publications-grid {
   display: flex;
-  flex-direction: column; /* vertical layout */
+  flex-direction: column; /* vertical list */
   gap: 20px;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
 }
 
 .publication-item {
   display: flex;
+  flex-direction: row;
   gap: 15px;
-  border: 2px solid #007BFF; /* border around the publication item */
-  padding: 10px;
+  border: 2px solid #007BFF; /* publication border */
   border-radius: 8px;
+  padding: 10px;
   align-items: flex-start;
+  overflow: hidden; /* ensures image doesn't escape */
 }
 
 .publication-item img {
-  width: 90px;       /* fixed width */
-  height: 90px;      /* fixed height */
-  object-fit: cover;  /* maintain aspect ratio, crop if needed */
+  width: 160px;   /* fixed width */
+  height: 160px;  /* fixed height */
+  object-fit: cover;
   border-radius: 8px;
-  flex-shrink: 0;
+  flex-shrink: 0; /* prevents shrinking */
+  border: 1px solid #333; /* optional border around image */
 }
 
 .publication-text {
-  flex: 1;
+  flex: 1; /* take remaining space */
 }
 
 .publication-text strong {
   font-weight: 700;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.publication-text a {
+  color: #1772d0;
+  text-decoration: none;
+}
+
+.publication-text a:hover {
+  color: #f09228;
+}
+
+.publication-text p {
+  margin: 5px 0;
 }
 
 /* Achievements & Review Activities */
