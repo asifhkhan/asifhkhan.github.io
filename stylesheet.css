@@ -180,7 +180,7 @@ h2 {
   padding: 6px 12px;
   margin-right: 5px;
   background-color: #fff !important; /* white background */
-  color: red !important;             /* red bold text */
+  color:  #8B0000 !important;             /* red bold text */
   font-weight: bold !important;
   border: 2px solid #000 !important; /* black border */
   border-radius: 5px;
@@ -193,7 +193,7 @@ h2 {
 
 .btn:hover {
   background-color: #000 !important; /* black background on hover */
-  color: red !important;             /* text stays red */
+  color:  #8B0000 !important;             /* text stays red */
   border-color: #000 !important;     /* black border */
 }
 /* Buttons inside publications */
@@ -203,7 +203,7 @@ h2 {
   padding: 6px 12px;
   margin-right: 5px;
   background-color: #fff !important; /* force white background */
-  color: red !important;             /* force red text */
+  color:  #8B0000 !important;             /* force red text */
   font-weight: bold !important;      /* bold text */
   border: 2px solid #000 !important; /* black border */
   border-radius: 5px;
@@ -216,6 +216,6 @@ h2 {
 
 .publication-text .btn:hover {
   background-color: #000 !important; /* black background on hover */
-  color: red !important;             /* text stays red */
+  color:  #8B0000 !important;             /* text stays red */
   border-color: #000 !important;     /* border stays black */
 }
