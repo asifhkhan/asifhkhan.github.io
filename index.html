@@ -8,6 +8,95 @@
   <title>Asif Hussain Khan</title>
   <link rel="stylesheet" href="stylesheet.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <style>
+    /* Dark mode toggle styles */
+    .theme-switch {
+      position: absolute;
+      right: 20px;
+      top: 15px;
+      display: inline-block;
+      width: 50px;
+      height: 24px;
+    }
+
+    .theme-switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      transition: 0.4s;
+      border-radius: 34px;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 18px;
+      width: 18px;
+      left: 4px;
+      bottom: 3px;
+      background-color: white;
+      transition: 0.4s;
+      border-radius: 50%;
+    }
+
+    input:checked + .slider {
+      background-color: #333;
+    }
+
+    input:checked + .slider:before {
+      transform: translateX(26px);
+    }
+
+    /* Dark mode styles */
+    body.dark-mode {
+      background-color: #121212;
+      color: #eee;
+    }
+
+    .dark-mode .navbar {
+      background-color: #1e1e1e;
+    }
+
+    .dark-mode .navbar a {
+      color: #eee;
+    }
+
+    .dark-mode .btn {
+      background-color: #1e1e1e !important;
+      color: #ffdddd !important;
+      border-color: #eee !important;
+    }
+
+    .dark-mode .publication-item {
+      background-color: #1e1e1e;
+      border-color: #333;
+    }
+
+    .dark-mode .publication-text p a {
+      color: #ffa500;
+    }
+
+    .dark-mode .btn:hover {
+      background-color: #eee !important;
+      color: #550000 !important;
+    }
+
+    .dark-mode .contact-icons a {
+      background-color: transparent;
+      border-color: #eee;
+      color: #f09228;
+    }
+  </style>
 </head>
 <body>
 
@@ -16,7 +105,14 @@
   <a href="#home" class="active">Home</a>
   <a href="#Publications">Publications</a>
   <a href="#Achievements">Achievements</a>
+     <!-- Theme Toggle Switch -->
+    <label class="theme-switch">
+      <input type="checkbox" id="theme-toggle">
+      <span class="slider"></span>
+    </label>
 </nav>
+
+  
 
   <!-- Home Section -->
   <section id="home" class="section-container home-grid">
@@ -189,6 +285,25 @@
 
     </div>
   </section>
+  <script>
+    const toggleSwitch = document.getElementById('theme-toggle');
+    const currentTheme = localStorage.getItem('theme');
+
+    if (currentTheme === 'dark') {
+      document.body.classList.add('dark-mode');
+      toggleSwitch.checked = true;
+    }
+
+    toggleSwitch.addEventListener('change', function () {
+      if (this.checked) {
+        document.body.classList.add('dark-mode');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        document.body.classList.remove('dark-mode');
+        localStorage.setItem('theme', 'light');
+      }
+    });
+  </script>
 
 </body>
 </html>
