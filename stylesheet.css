@@ -219,3 +219,14 @@ h2 {
   color:  #550000 !important;             /* text stays red */
   border-color: #000 !important;     /* border stays black */
 }
+.contact-icons a {
+  font-size: 36px;        /* increased size */
+  color: #333;            /* default color */
+  margin-right: 15px;     /* spacing between icons */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-icons a:hover {
+  color: #f09228;         /* hover color */
+}
