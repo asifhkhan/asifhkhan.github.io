@@ -265,7 +265,9 @@ body.dark-mode .theme-icon {
 
 
 <script>
+document.addEventListener('DOMContentLoaded', () => {
   const themeIcon = document.getElementById('theme-icon');
+  const navbar = document.querySelector('.navbar');
   const body = document.body;
 
   // Load saved theme
@@ -276,6 +278,7 @@ body.dark-mode .theme-icon {
     themeIcon.title = "Toggle light mode";
   }
 
+  // Dark mode toggle
   themeIcon.addEventListener('click', () => {
     body.classList.toggle('dark-mode');
 
@@ -290,18 +293,16 @@ body.dark-mode .theme-icon {
     }
   });
 
-
-  const navbar = document.querySelector('.navbar');
-
+  // Navbar scroll effect
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {   // adjust value as needed
+    if (window.scrollY > 50) {
       navbar.classList.add('scrolled');
     } else {
       navbar.classList.remove('scrolled');
     }
   });
+});
 </script>
-  
 
 
 </body>
