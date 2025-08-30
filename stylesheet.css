@@ -112,8 +112,8 @@ body {
 }
 
 .publication-item img {
-  width: 160px;   /* fixed width */
-  height: 160px;  /* fixed height */
+  width: 80px;   /* fixed width */
+  height: 80px;  /* fixed height */
   object-fit: cover;
   border-radius: 8px;
   flex-shrink: 0; /* prevents shrinking */
