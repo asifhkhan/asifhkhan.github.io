@@ -172,21 +172,26 @@ body {
 h2 {
   margin-bottom: 10px;
 }
+
 .btn {
   display: inline-block;
+  width: 100px;               /* fixed width for all buttons */
   padding: 6px 12px;
   margin-right: 5px;
-  background-color: #fff;       /* white background */
-  color: #000;                  /* black text */
-  border: 2px solid #000;       /* black border */
+  background-color: #fff;     /* white background */
+  color: red;                 /* red text */
+  font-weight: bold;           /* bold text */
+  border: 2px solid #000;     /* black border */
   border-radius: 5px;
   text-decoration: none;
   font-size: 14px;
+  text-align: center;         /* centers the text */
   transition: all 0.3s ease;
+  box-sizing: border-box;     /* includes border in width */
 }
 
 .btn:hover {
-  background-color: #000;       /* black background on hover */
-  color: #fff;                  /* text becomes white on hover */
-  border-color: #000;           /* border stays black */
+  background-color: #000;     /* black background on hover */
+  color: red;                 /* text stays red on hover */
+  border-color: #000;         /* border stays black */
 }
