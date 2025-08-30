@@ -260,11 +260,6 @@ h2 {
   transform: scale(1.1);      /* slightly enlarge on hover */
 }
 
-/* Default navbar */
-.navbar {
-  transition: all 0.3s ease;
-  background-color: transparent;
-}
 
 /* Navbar after scroll */
 .navbar.scrolled {
