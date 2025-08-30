@@ -10,14 +10,21 @@ body {
   color: #333;
 }
 
+/* Sticky Navbar */
 .navbar {
   display: flex;
   justify-content: center;
-  gap: 30px; /* spacing between links */
-  margin: 20px 0;
+  gap: 30px;
+  padding: 15px 0;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   font-family: 'Lato', sans-serif;
 }
 
+/* Navbar links */
 .navbar a {
   font-size: 18px;
   text-decoration: none;
@@ -28,13 +35,11 @@ body {
   border-radius: 5px;
 }
 
-/* Hover background and color */
 .navbar a:hover {
-  background-color: #007BFF; /* professional blue */
+  background-color: #007BFF;
   color: #fff;
 }
 
-/* Underline animation */
 .navbar a::after {
   content: '';
   display: block;
@@ -51,10 +56,15 @@ body {
   width: 100%;
 }
 
-/* Active link style */
+/* Active link */
 .navbar a.active {
   font-weight: bold;
   color: #007BFF;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
 }
 
 /* Section container */
