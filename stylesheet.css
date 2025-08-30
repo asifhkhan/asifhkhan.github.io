@@ -259,3 +259,15 @@ h2 {
   color: #fff;                /* change icon color on hover */
   transform: scale(1.1);      /* slightly enlarge on hover */
 }
+
+/* Default navbar */
+.navbar {
+  transition: all 0.3s ease;
+  background-color: transparent;
+}
+
+/* Navbar after scroll */
+.navbar.scrolled {
+  background-color: #fff;   /* solid background */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
