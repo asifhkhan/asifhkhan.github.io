@@ -59,20 +59,25 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .home-text {
-  flex: 1 1 300px;
+  flex: 1 1 500px; /* text takes majority of width */
+}
+
+.home-image {
+  flex: 0 0 200px;  /* fixed width for image */
+  display: flex;
+  justify-content: flex-end;  /* push image to right */
 }
 
 .home-image img {
-  width: 80%;      /* sets a fixed, clean width */
-  height: auto;      /* keeps aspect ratio */
-  max-width: 80%;   /* scales down on small screens */
-  border-radius: 10px; /* optional rounded corners */
-  display: block;    /* avoids extra spacing */
+  width: 200px;      /* fixed width */
+  height: auto;
+  border-radius: 10px;
+  display: block;
 }
 
 .contact-links a {
@@ -89,7 +94,7 @@ body {
 .publications-grid {
   display: flex;
   flex-direction: column;  /* vertical layout */
-  gap: 30px;              /* spacing between publications */
+  gap: 30px;               /* spacing between publications */
 }
 
 .publication-item {
