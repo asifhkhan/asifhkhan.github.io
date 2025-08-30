@@ -9,94 +9,59 @@
   <link rel="stylesheet" href="stylesheet.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
    <style>
-    /* Dark mode toggle styles */
-    .theme-switch {
-      position: absolute;
-      right: 20px;
-      top: 15px;
-      display: inline-block;
-      width: 50px;
-      height: 24px;
-    }
+  .theme-icon {
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    color: #333;
+    transition: color 0.3s ease;
+  }
 
-    .theme-switch input {
-      opacity: 0;
-      width: 0;
-      height: 0;
-    }
+  body.dark-mode .theme-icon {
+    color: #f0f0f0;
+  }
 
-    .slider {
-      position: absolute;
-      cursor: pointer;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: #ccc;
-      transition: 0.4s;
-      border-radius: 34px;
-    }
+  body.dark-mode {
+    background-color: #121212;
+    color: #eee;
+  }
 
-    .slider:before {
-      position: absolute;
-      content: "";
-      height: 18px;
-      width: 18px;
-      left: 4px;
-      bottom: 3px;
-      background-color: white;
-      transition: 0.4s;
-      border-radius: 50%;
-    }
+  .dark-mode .navbar {
+    background-color: #1e1e1e;
+  }
 
-    input:checked + .slider {
-      background-color: #333;
-    }
+  .dark-mode .navbar a {
+    color: #eee;
+  }
 
-    input:checked + .slider:before {
-      transform: translateX(26px);
-    }
+  .dark-mode .btn {
+    background-color: #1e1e1e !important;
+    color: #ffdddd !important;
+    border-color: #eee !important;
+  }
 
-    /* Dark mode styles */
-    body.dark-mode {
-      background-color: #121212;
-      color: #eee;
-    }
+  .dark-mode .publication-item {
+    background-color: #1e1e1e;
+    border-color: #333;
+  }
 
-    .dark-mode .navbar {
-      background-color: #1e1e1e;
-    }
+  .dark-mode .publication-text p a {
+    color: #ffa500;
+  }
 
-    .dark-mode .navbar a {
-      color: #eee;
-    }
+  .dark-mode .btn:hover {
+    background-color: #eee !important;
+    color: #550000 !important;
+  }
 
-    .dark-mode .btn {
-      background-color: #1e1e1e !important;
-      color: #ffdddd !important;
-      border-color: #eee !important;
-    }
-
-    .dark-mode .publication-item {
-      background-color: #1e1e1e;
-      border-color: #333;
-    }
-
-    .dark-mode .publication-text p a {
-      color: #ffa500;
-    }
-
-    .dark-mode .btn:hover {
-      background-color: #eee !important;
-      color: #550000 !important;
-    }
-
-    .dark-mode .contact-icons a {
-      background-color: transparent;
-      border-color: #eee;
-      color: #f09228;
-    }
-  </style>
+  .dark-mode .contact-icons a {
+    background-color: transparent;
+    border-color: #eee;
+    color: #f09228;
+  }
+</style>
 </head>
 <body>
 
@@ -106,10 +71,12 @@
   <a href="#Publications">Publications</a>
   <a href="#Achievements">Achievements</a>
      <!-- Theme Toggle Switch -->
-    <label class="theme-switch">
-      <input type="checkbox" id="theme-toggle">
-      <span class="slider"></span>
-    </label>
+    <!-- Theme Toggle with Icon -->
+  <i id="theme-icon" class="fas fa-moon theme-icon" title="Toggle dark mode"></i>
+  <label class="theme-switch">
+    <input type="checkbox" id="theme-toggle">
+    <span class="slider"></span>
+  </label>
 </nav>
 
   
@@ -259,51 +226,30 @@
 
 
   <!-- Achievements & Review Activities Section -->
-  <section class="section-container">
-    <div class="achievements-review">
+ <script>
+  const themeToggle = document.getElementById('theme-toggle');
+  const themeIcon = document.getElementById('theme-icon');
 
-      <div class="achievements">
-        <h2 id="Achievements">
-        <i class="fas fa-trophy"></i> Achievements
-      </h2>
-        <ul>
-          <li>Recipient of the 2022 Italy Scholarship for PhD in Computer Science and Artificial Intelligence.</li>
-          <li>Received €2,000 funding from the European Union Next-GenerationEU for the project titled “Lightweight Implicit Blur Kernel Estimation Network for Blind Image Super-Resolution”.</li>
-          <li>Recognised as an Outstanding Reviewer at the European Conference on Computer Vision (ECCV) 2024.</li>
-        </ul>
-      </div>
+  const currentTheme = localStorage.getItem('theme');
 
-      <div class="review-activities">
-       <h2>
-  <i class="fas fa-clipboard-check"></i> Review Activities
-</h2>
-        <ul>
-          <li><strong>Conferences:</strong> ECCV 2024, CVPR 2024, ICIAP 2023</li>
-          <li><strong>Journals:</strong> Pattern Recognition, Image and Vision Computing</li>
-        </ul>
-      </div>
+  if (currentTheme === 'dark') {
+    document.body.classList.add('dark-mode');
+    themeToggle.checked = true;
+    themeIcon.classList.replace('fa-moon', 'fa-sun');
+  }
 
-    </div>
-  </section>
-  <script>
-    const toggleSwitch = document.getElementById('theme-toggle');
-    const currentTheme = localStorage.getItem('theme');
-
-    if (currentTheme === 'dark') {
+  themeToggle.addEventListener('change', function () {
+    if (this.checked) {
       document.body.classList.add('dark-mode');
-      toggleSwitch.checked = true;
+      localStorage.setItem('theme', 'dark');
+      themeIcon.classList.replace('fa-moon', 'fa-sun');
+    } else {
+      document.body.classList.remove('dark-mode');
+      localStorage.setItem('theme', 'light');
+      themeIcon.classList.replace('fa-sun', 'fa-moon');
     }
-
-    toggleSwitch.addEventListener('change', function () {
-      if (this.checked) {
-        document.body.classList.add('dark-mode');
-        localStorage.setItem('theme', 'dark');
-      } else {
-        document.body.classList.remove('dark-mode');
-        localStorage.setItem('theme', 'light');
-      }
-    });
-  </script>
+  });
+</script>
 
 </body>
 </html>
