@@ -10,29 +10,31 @@ body {
   color: #333;
 }
 
-/* Navbar */
 .navbar {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 30px; /* spacing between links */
   margin: 20px 0;
+  font-family: 'Lato', sans-serif;
 }
 
 .navbar a {
   font-size: 18px;
   text-decoration: none;
   color: #333;
-  padding: 10px 15px;
-  transition: all 0.3s ease;
+  padding: 8px 16px;
   position: relative;
-}
-
-.navbar a:hover {
-  color: #fff;
-  background-color: #007BFF;
+  transition: all 0.3s ease;
   border-radius: 5px;
 }
 
+/* Hover background and color */
+.navbar a:hover {
+  background-color: #007BFF; /* professional blue */
+  color: #fff;
+}
+
+/* Underline animation */
 .navbar a::after {
   content: '';
   display: block;
@@ -40,11 +42,19 @@ body {
   width: 0;
   background: #007BFF;
   transition: width 0.3s;
-  margin-top: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .navbar a:hover::after {
   width: 100%;
+}
+
+/* Active link style */
+.navbar a.active {
+  font-weight: bold;
+  color: #007BFF;
 }
 
 /* Section container */
