@@ -134,6 +134,7 @@ html {
 
 .publication-text {
   flex: 1;
+  text-align: justify; /* 👈 Add this line */
 }
 
 .publication-text strong {
