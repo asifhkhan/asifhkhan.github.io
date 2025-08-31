@@ -180,6 +180,12 @@ html {
   border-radius: 1px;
   border: 3px solid #007BFF; /* add a blue border around the image */
   box-sizing: border-box; /* ensures the border stays inside the container */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-video .video-container:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.6);
 }
 
 /* Achievements & Review Activities */
