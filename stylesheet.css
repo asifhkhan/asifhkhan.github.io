@@ -1,3 +1,768 @@
+Gemini
+
+2.5 Flash
+
+Esegui l'upgrade
+
+
+
+
+
+Conversazione con Gemini
+i want my nav bar chnage to tabs when scrool down <div><br class="Apple-interchange-newline"><br><br><!DOCTYPE html><br><html lang="en"><br><head><br> <meta charset="UTF-8"><br> <meta name="viewport" content="width=device-width, initial-scale=1.0"><br> <title>Asif Hussain Khan</title><br> <link rel="stylesheet" href="stylesheet.css"><br> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><br> <style><br> .theme-icon {<br> font-size: 20px;<br> cursor: pointer;<br> position: absolute;<br> right: 20px;<br> top: 16px;<br> color: #333;<br> transition: color 0.3s ease;<br> }<br><br> body.dark-mode .theme-icon {<br> color: #f0f0f0;<br> }<br><br> body.dark-mode {<br> background-color: #121212;<br> color: #eee;<br> }<br><br> .dark-mode .navbar {<br> background-color: #1e1e1e;<br> }<br><br> .dark-mode .navbar a {<br> color: #eee;<br> }<br><br> .dark-mode .btn {<br> background-color: #1e1e1e !important;<br> color: #ffdddd !important;<br> border-color: #eee !important;<br> }<br><br> .dark-mode .publication-item {<br> background-color: #1e1e1e;<br> border-color: #333;<br> }<br><br> .dark-mode .publication-text p a {<br> color: #ffa500;<br> }<br><br> .dark-mode .btn:hover {<br> background-color: #eee !important;<br> color: #550000 !important;<br> }<br><br> .dark-mode .contact-icons a {<br> background-color: transparent;<br> border-color: #eee;<br> color: #f09228;<br> }<br> .theme-icon {<br> font-size: 20px;<br> margin-right: 10px;<br> cursor: pointer;<br> color: #444;<br> transition: color 0.3s;<br>}<br><br>body.dark-mode .theme-icon {<br> color: #f1c40f; /* Yellowish in dark mode */<br>}<br></style><br><br> <br><br></head><br><body><br><br> <!-- Navbar --><br><nav class="navbar"><br> <a href="#home" class="active">Home</a><br> <a href="#Publications">Publications</a><br> <a href="#Achievements">Achievements</a><br> <!-- Theme Toggle Switch --><br> <!-- Theme Toggle with Icon --><br> <i id="theme-icon" class="fas fa-moon theme-icon" title="Toggle dark mode"></i><br> <br></nav><br><br> <br><br> <!-- Home Section --><br> <section id="home" class="section-container home-grid"><br> <div class="home-text"><br><h1><strong>Asif</strong> Hussain Khan</h1><br> <p>I obtained my PhD in Computer Science and Artificial Intelligence at the <a href="https://machinelearning.uniud.it/">Machine Learning and Perceptron Lab</a>, <a href="https://www.uniud.it/en/uniud-international?set_language=en">University of Udine</a>, Italy under the supervision of <a href="https://users.dimi.uniud.it/~niki.martinel/">Dr Niki Martinel</a>.My research focused on low-level vision tasks, particularly image and video super-resolution. During my PhD, I developed an efficient implicit deep learning-based image super-resolution technique aimed at significantly reducing model parameters, FLOPs, and inference time while maintaining model performance.</p><br> <p class="contact-icons"><br> <a href="mailto:asifkhan00992@gmail.com" title="Email"><i class="fas fa-envelope"></i></a><br> <a href="data/Asif_CV.pdf">CV</a><br> <a href="https://scholar.google.com/citations?user=L74TJA4AAAAJ&hl=en" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a><br> <a href="https://github.com/asifhkhan/" title="Github"><i class="fab fa-github"></i></a><br> <a href="https://orcid.org/0000-0002-4337-2889" title="ORCID"><i class="fa-brands fa-orcid"></i></a><br> </p><br> </div><br> <div class="home-image"><br> <img src="images/asif1.png" alt="Profile Photo"><br> </div><br></section><br><br> <!-- Publications Section --><br> <section id="Publications" class="section-container"><br> <h2><br> <i class="fas fa-book"></i> Selected Publications<br></h2><br><br> <!-- Publication 1 --><br> <div class="publication-item hover-video"><br> <div class="video-container"><br> <video muted autoplay loop><br> <source src="images/tip.mp4" type="video/mp4"><br> </video><br> <img src="images/tip.png" alt="TIP Paper Thumbnail"><br> </div><br> <div class="publication-text"><br> <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10639339"><br> <strong>Lightweight Prompt Learning Implicit Degradation Estimation Network for Blind Super Resolution</strong><br> </a><br> <p><br> <strong><u>Asif Hussain Khan</u></strong>, Christian Micheloni, Niki Martinel<br></p><br> <p><em>Transaction on Image Processing (TIP), 2024</em></p><br> <p>Blind image super-resolution (SR) aims to recover high-resolution images without knowing the degradation. Existing methods often require ground-truth kernels and heavy networks. This work proposes a lightweight model (PL-IDENet) that implicitly learns degradations using a novel loss and a learnable Wiener filter. The method achieves better accuracy with significantly fewer parameters and computations.</p><br> <p><br> <a href="https://github.com/asifhkhan/PL_IDENET" class="btn">Code</a><br> <a href="https://github.com/asifhkhan/PL_IDENET" class="btn">Dataset</a><br> <a href="data/default.bib" class="btn">Bibtex</a><br> </p><br> </div><br> </div><br><br> <!-- Publication 2 --><br> <div class="publication-item hover-video"><br> <div class="video-container"><br> <video muted autoplay loop><br> <source src="images/idenet.mp4" type="video/mp4"><br> </video><br> <img src="images/idenet.png" alt="IDENet Paper Thumbnail"><br> </div><br> <div class="publication-text"><br> <a href="https://openaccess.thecvf.com/content/CVPR2024W/NTIRE/papers/Khan_IDENet_Implicit_Degradation_Estimation_Network_for_Efficient_Blind_Super_Resolution_CVPRW_2024_paper.pdf"><br> <strong>IDENet: Implicit Degradation Estimation Network for Efficient Blind Super Resolution</strong><br> </a><br> <p> <strong><u>Asif Hussain Khan</u></strong>, Christian Micheloni, Niki Martinel</p><br> <p><em>CVPR Workshop, 2024</em></p><br> <p>Blind image super-resolution (SR) restores high-resolution images from low-resolution inputs with unknown degradations. Existing methods need ground-truth degradation or are computationally heavy. The proposed model uses a novel loss and a learnable Wiener filter to implicitly estimate degradation and efficiently solve deconvolution. It outperforms implicit SR methods and matches explicit ones with much fewer parameters.</p><br> <p><br> <a href="https://github.com/asifhkhan" class="btn">Code</a><br> <a href="https://github.com/asifhkhan/PL_IDENET" class="btn">Dataset</a><br> <a href="data/default.bib" class="btn">Bibtex</a><br> </p><br> </div><br> </div><br><br> <!-- Publication 3 --><br> <div class="publication-item hover-video"><br> <div class="video-container"><br> <video muted autoplay loop><br> <source src="images/ntire.mp4" type="video/mp4"><br> </video><br> <img src="images/ntire.png" alt="NTIRE Paper Thumbnail"><br> </div><br> <div class="publication-text"><br> <a href="https://openaccess.thecvf.com/content/CVPR2024W/NTIRE/papers/Chen_NTIRE_2024_Challenge_on_Image_Super-Resolution_x4_Methods_and_Results_CVPRW_2024_paper.pdf"><br> <strong>NTIRE 2024 Challenge on Image Super-Resolution (×4): Methods and Results</strong><br> </a><br> <p>Chen, Zheng, et al.</p><br> <p><em>NTIRE Challenge, 2024</em></p><br> <p>The NTIRE 2024 Image Super-Resolution (×4) Challenge focused on enhancing low-resolution images using bicubic downsampling inputs. With no limits on model size or training data, the competition aimed for top PSNR performance on the DIV2K test set. Attracting 199 registrants and 20 final submissions, the challenge advanced state-of-the-art SR techniques and showcased emerging trends.</p><br> <p><br> <a href="https://github.com/zhengchen1999/NTIRE2024_ImageSR_x4" class="btn">Code</a><br> <a href="https://github.com/zhengchen1999/NTIRE2024_ImageSR_x4" class="btn">Dataset</a><br> <a href="data/default.bib" class="btn">Bibtex</a><br> </p><br> </div><br> </div><br><br> <!-- Publication 4 --><br> <div class="publication-item hover-video"><br> <div class="video-container"><br> <video muted autoplay loop><br> <source src="images/lbkenet.mp4" type="video/mp4"><br> </video><br> <img src="images/lbkenet.png" alt="LBKENet Paper Thumbnail"><br> </div><br> <div class="publication-text"><br> <a href="https://link.springer.com/chapter/10.1007/978-3-031-43153-1_18"><br> <strong>LBKENet: Lightweight Blur Kernel Estimation Network for Blind Image Super-Resolution</strong><br> </a><br> <p> <strong><u>Asif Hussain Khan</u></strong>, Rao Muhammad Umer, Matteo Dunnhofer, Christian Micheloni, Niki Martinel</p><br> <p><em>ICIAP, 2023</em></p><br> <p>Blind image super-resolution (Blind-SR) restores high-resolution images from low-resolution inputs with unknown degradations. Existing methods rely on ground-truth blur kernels, but this work proposes a lightweight, implicit kernel estimation network (LBKENet) that learns without ground-truth supervision. It combines a super-resolver and a blur kernel estimator in an end-to-end framework with a novel loss design. The approach achieves competitive performance with 12× fewer parameters, making it suitable for low-resource device.</p><br> <p><br> <a href="https://github.com/asifhkhan" class="btn">Code</a><br> <a href="https://github.com/asifhkhan" class="btn">Dataset</a><br> <a href="data/default.bib" class="btn">Bibtex</a><br> </p><br> </div><br> </div><br><br> <!-- Publication 5 --><br> <div class="publication-item hover-video"><br> <div class="video-container"><br> <video muted autoplay loop><br> <source src="images/lbkenet2.mp4" type="video/mp4"><br> </video><br> <img src="images/lbkenet.png" alt="LBKENet2 Paper Thumbnail"><br> </div><br> <div class="publication-text"><br> <a href="https://www.mdpi.com/2078-2489/14/5/296"><br> <strong>Lightweight Implicit Blur Kernel Estimation Network for Blind Image Super-Resolution</strong><br> </a><br> <p> <strong><u>Asif Hussain Khan</u></strong>, Christian Micheloni, Niki Martinel</p><br> <p><em>Information Journal, 2023</em></p><br> <p>We propose a lightweight blind super-resolution (Blind-SR) model that estimates blur kernels and restores HR images without ground-truth supervision. Our method uses a Super Resolver and an Estimator Network trained with a novel loss for joint kernel and image recovery. We further extend our work to handle anisotropic Gaussian kernels for more complex degradations. Experiments show our approach is efficient and performs well with significantly fewer parameters than state-of-the-art models.</p><br> <p><br> <a href="https://github.com/asifhkhan" class="btn">Code</a><br> <a href="https://github.com/asifhkhan" class="btn">Dataset</a><br> <a href="data/default.bib" class="btn">Bibtex</a><br> </p><br> </div><br> </div><br><br></section><br><br> <!-- Achievements & Review Activities Section --><br><section class="section-container"><br> <div class="achievements-review"><br><br> <!-- Achievements --><br> <div class="achievements"><br> <h2 id="Achievements"><br> <i class="fas fa-trophy"></i> Achievements<br> </h2><br> <ul><br> <li>Recipient of the 2022 Italy Scholarship for PhD in Computer Science and Artificial Intelligence.</li><br> <li>Received €2,000 funding from the European Union Next-GenerationEU for the project titled “Lightweight Implicit Blur Kernel Estimation Network for Blind Image Super-Resolution”.</li><br> <li>Recognised as an Outstanding Reviewer at the European Conference on Computer Vision (ECCV) 2024.</li><br> </ul><br> </div><br><br> <!-- Review Activities --><br> <div class="review-activities"><br> <h2><br> <i class="fas fa-clipboard-check"></i> Review Activities<br> </h2><br> <ul><br> <li><strong>Conferences:</strong> ECCV 2024, CVPR 2024, ICIAP 2023</li><br> <li><strong>Journals:</strong> Pattern Recognition, Image and Vision Computing</li><br> </ul><br> </div><br><br> </div><br></section><br><br><!--<br><script><br>document.addEventListener('DOMContentLoaded', () => {<br> const themeIcon = document.getElementById('theme-icon');<br> const navbar = document.querySelector('.navbar');<br> const body = document.body;<br><br> // Load saved theme<br> const savedTheme = localStorage.getItem('theme');<br> if (savedTheme === 'dark') {<br> body.classList.add('dark-mode');<br> themeIcon.classList.replace('fa-moon', 'fa-sun');<br> themeIcon.title = "Toggle light mode";<br> }<br><br> // Dark mode toggle<br> themeIcon.addEventListener('click', () => {<br> body.classList.toggle('dark-mode');<br><br> if (body.classList.contains('dark-mode')) {<br> themeIcon.classList.replace('fa-moon', 'fa-sun');<br> themeIcon.title = "Toggle light mode";<br> localStorage.setItem('theme', 'dark');<br> } else {<br> themeIcon.classList.replace('fa-sun', 'fa-moon');<br> themeIcon.title = "Toggle dark mode";<br> localStorage.setItem('theme', 'light');<br> }<br> });<br><br> // Navbar scroll effect<br> window.addEventListener('scroll', () => {<br> if (window.scrollY > 50) {<br> navbar.classList.add('scrolled');<br> } else {<br> navbar.classList.remove('scrolled');<br> }<br> });<br>});<br></script><br><br>--><br> <script><br> document.addEventListener('DOMContentLoaded', () => {<br> const navbar = document.querySelector('.navbar');<br> const themeIcon = document.getElementById('theme-icon');<br> const body = document.body;<br><br> // Load saved theme<br> const savedTheme = localStorage.getItem('theme');<br> if (savedTheme === 'dark') {<br> body.classList.add('dark-mode');<br> themeIcon.classList.replace('fa-moon', 'fa-sun');<br> themeIcon.title = "Toggle light mode";<br> }<br><br> // Dark mode toggle<br> themeIcon.addEventListener('click', () => {<br> body.classList.toggle('dark-mode');<br> if (body.classList.contains('dark-mode')) {<br> themeIcon.classList.replace('fa-moon', 'fa-sun');<br> themeIcon.title = "Toggle light mode";<br> localStorage.setItem('theme', 'dark');<br> } else {<br> themeIcon.classList.replace('fa-sun', 'fa-moon');<br> themeIcon.title = "Toggle dark mode";<br> localStorage.setItem('theme', 'light');<br> }<br> });<br><br> // Navbar scroll effect<br> window.addEventListener('scroll', () => {<br> if (window.scrollY > 50) {<br> navbar.classList.add('scrolled');<br> } else {<br> navbar.classList.remove('scrolled');<br> }<br> });<br> });<br> </script><br><br></body><br></html></div>
+
+
+
+Changing the style of your navigation bar when a user scrolls is a common and effective way to improve user experience on a webpage. To achieve this, you need to combine HTML, CSS, and JavaScript.
+
+How it Works
+The basic concept is to use JavaScript to monitor the user's scroll position. Once the scroll position passes a certain point (for example, 50 pixels down from the top), you use JavaScript to add a new class to your navigation bar's HTML element. You then use this new class in your CSS to apply the tab-like styling you want.
+
+Here's a breakdown of the steps and the code to make it work.
+
+1. HTML Structure
+Your HTML is already set up to handle this. You just need to reference the navbar class in your JavaScript.
+
+2. CSS Styling
+This is where you'll define the new "tabs" style for your navigation bar. In your stylesheet.css, you would add a new class, let's call it .scrolled. This class will contain the CSS properties that change the appearance of your navbar.
+
+CSS
+
+/* Existing navbar styles */
+.navbar {
+  /* Your current navbar styles */
+  background-color: #f0f0f0;
+  transition: all 0.3s ease; /* Add a transition for a smooth change */
+}
+
+/* New styles for the "scrolled" state */
+.navbar.scrolled {
+  background-color: #ffffff; /* Example: change background color */
+  border-bottom: 2px solid #ddd;
+  padding: 10px 0;
+  /* Add other styles to make it look like tabs */
+}
+The transition property on the original .navbar class is important. It will ensure that the changes you apply in the .scrolled class happen smoothly instead of instantly, creating a nicer visual effect.
+
+3. JavaScript Logic
+This is the most crucial part. You'll add an event listener to the window object to detect when the user scrolls.
+
+JavaScript
+
+document.addEventListener('DOMContentLoaded', () => {
+    const navbar = document.querySelector('.navbar');
+    // ... your existing code ...
+
+    // Navbar scroll effect
+    window.addEventListener('scroll', () => {
+      // Check if the vertical scroll position is greater than a certain value (e.g., 50px)
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled'); // Add the new class
+      } else {
+        navbar.classList.remove('scrolled'); // Remove the class if the user scrolls back up
+      }
+    });
+});
+The code you have in your HTML already has the correct JavaScript logic for the scroll effect. The classList.add('scrolled') and classList.remove('scrolled') lines are exactly what you need. All you have to do is create the .scrolled class in your CSS and apply the styles you want for the "tabs" appearance.
+
+The code checks if the vertical scroll position (window.scrollY) is greater than a specific pixel value (50 in this example). If it is, it adds the scrolled class to the navbar. If the user scrolls back up and the position is less than or equal to 50, the scrolled class is removed, and the navbar returns to its original state.
+
+Responsive Horizontal Scrollable & Draggable Tab Menu
+This video tutorial shows how to create responsive, scrollable tabs using HTML, CSS, and JavaScript, which is relevant to your goal of changing a navbar into tabs.
+
+
+
+
+
+
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+
+
+body {
+
+  font-family: 'Courier New', Courier;
+
+  font-size: 18px;
+
+  line-height: 1.6;
+
+  margin: 0;
+
+  padding: 0;
+
+  color: #333;
+
+}
+
+
+
+/* Sticky Navbar */
+
+.navbar {
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 30px;
+
+  padding: 15px 0;
+
+  background-color:  transparent;
+
+  position: sticky;
+
+  top: 0;
+
+  z-index: 1000;
+
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+  font-family: 'Lato', sans-serif;
+
+}
+
+
+
+/* Navbar after scroll */
+
+.navbar.scrolled {
+
+  background-color:  #fff;   /* solid background */
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+
+}
+
+
+
+/* Navbar links */
+
+.navbar a {
+
+  font-size: 18px;
+
+  text-decoration: none;
+
+  color: #333;
+
+  padding: 8px 16px;
+
+  position: relative;
+
+  transition: all 0.3s ease;
+
+  border-radius: 5px;
+
+}
+
+
+
+.navbar a:hover {
+
+  background-color: #007BFF;
+
+  color: #fff;
+
+}
+
+
+
+.navbar a::after {
+
+  content: '';
+
+  display: block;
+
+  height: 2px;
+
+  width: 0;
+
+  background: #007BFF;
+
+  transition: width 0.3s;
+
+  position: absolute;
+
+  bottom: 0;
+
+  left: 0;
+
+}
+
+
+
+.navbar a:hover::after {
+
+  width: 100%;
+
+}
+
+
+
+/* Active link */
+
+.navbar a.active {
+
+  font-weight: bold;
+
+  color: #007BFF;
+
+}
+
+
+
+/* Smooth scrolling */
+
+html {
+
+  scroll-behavior: smooth;
+
+}
+
+
+
+/* Section container */
+
+.section-container {
+
+  max-width: 800px;
+
+  margin: 0 auto 40px auto;
+
+  padding: 20px;
+
+}
+
+
+
+/* Home section */
+
+.home-grid {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 20px;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+}
+
+
+
+.home-text {
+
+  flex: 1 1 500px; /* text takes majority of width */
+
+}
+
+
+
+.home-image {
+
+  flex: 0 0 200px;  /* fixed width for image */
+
+  display: flex;
+
+  justify-content: flex-end;  /* push image to right */
+
+}
+
+
+
+.home-image img {
+
+  width: 200px;      /* fixed width */
+
+  height: auto;
+
+  border-radius: 10px;
+
+  display: block;
+
+}
+
+
+
+.contact-links a {
+
+  margin-right: 10px;
+
+  color: #1772d0;
+
+  text-decoration: none;
+
+}
+
+
+
+.contact-links a:hover {
+
+  color: #f09228;
+
+}
+
+
+
+/* Publications */
+
+.publications-grid {
+
+  display: flex;
+
+  flex-direction: column;  /* vertical layout */
+
+  gap: 30px;               /* spacing between publications */
+
+}
+
+
+
+.publication-item {
+
+  display: flex;
+
+  gap: 20px;
+
+  border: 1px solid #ddd;
+
+  padding: 15px;
+
+  border-radius: 8px;
+
+  align-items: flex-start;
+
+}
+
+
+
+.publication-text {
+
+  flex: 1;
+
+}
+
+
+
+.publication-text strong {
+
+  font-weight: 700;
+
+  font-size: 16px;
+
+}
+
+
+
+.publication-text p a {
+
+  color: #1772d0;
+
+  text-decoration: none;
+
+  margin-right: 10px;
+
+}
+
+
+
+.publication-text p a:hover {
+
+  color: #f09228;
+
+}
+
+
+
+/* Hover video effect */
+
+.hover-video .video-container {
+
+  position: relative;
+
+  width: 160px;
+
+  height: 160px;
+
+  flex-shrink: 0;
+
+}
+
+
+
+.hover-video .video-container video {
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  opacity: 0;
+
+  transition: opacity 0.5s ease;
+
+}
+
+
+
+.hover-video .video-container:hover video {
+
+  opacity: 1;
+
+}
+
+
+
+.hover-video .video-container img {
+
+  display: block;
+
+  width: 100%;
+
+  height: 60%;
+
+  border-radius: 1px;
+
+  border: 3px solid #007BFF; /* add a blue border around the image */
+
+  box-sizing: border-box; /* ensures the border stays inside the container */
+
+}
+
+
+
+/* Achievements & Review Activities */
+
+.achievements-review {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 40px;    /* consistent spacing */
+
+}
+
+
+
+.achievements ul,
+
+.review-activities ul {
+
+  padding-left: 20px;
+
+  margin-top: 10px;
+
+}
+
+
+
+h2 {
+
+  margin-bottom: 10px;
+
+}
+
+
+
+/* General button style for publications and top links */
+
+.btn {
+
+  display: inline-block;
+
+  width: 100px;               /* fixed width for uniformity */
+
+  padding: 6px 12px;
+
+  margin-right: 5px;
+
+  background-color: #fff !important; /* white background */
+
+  color:   #550000 !important;             /* red bold text */
+
+  font-weight: bold !important;
+
+  border: 2px solid #000 !important; /* black border */
+
+  border-radius: 5px;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  text-align: center;
+
+  transition: all 0.3s ease;
+
+  box-sizing: border-box;
+
+}
+
+
+
+.btn:hover {
+
+  background-color: #000 !important; /* black background on hover */
+
+  color:   #550000 !important;             /* text stays red */
+
+  border-color: #000 !important;     /* black border */
+
+}
+
+/* Buttons inside publications */
+
+.publication-text .btn {
+
+  display: inline-block;
+
+  width: 100px;               /* fixed width */
+
+  padding: 6px 12px;
+
+  margin-right: 5px;
+
+  background-color: #fff !important; /* force white background */
+
+  color:   #550000 !important;             /* force red text */
+
+  font-weight: bold !important;      /* bold text */
+
+  border: 2px solid #000 !important; /* black border */
+
+  border-radius: 5px;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  text-align: center;
+
+  transition: all 0.3s ease;
+
+  box-sizing: border-box;
+
+}
+
+
+
+.publication-text .btn:hover {
+
+  background-color: #000 !important; /* black background on hover */
+
+  color:  #550000 !important;             /* text stays red */
+
+  border-color: #000 !important;     /* border stays black */
+
+}
+
+.contact-icons a {
+
+  font-size: 36px;            /* increase icon size */
+
+  color: #8B0000;             /* dark red text color */
+
+  margin-right: 15px;         /* spacing between icons */
+
+  text-decoration: none;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 60px;                /* size of the circular border */
+
+  height: 60px;
+
+  border: 2px solid #000;     /* black border */
+
+  border-radius: 50%;         /* makes it circular */
+
+  transition: all 0.3s ease;
+
+}
+
+
+
+.contact-icons a:hover {
+
+  background-color: #f09228;  /* optional hover background */
+
+  color: #fff;                /* change icon color on hover */
+
+  transform: scale(1.1);      /* slightly enlarge on hover */
+
+}
+
+
+
+
+
+h1 {
+
+  font-size: 36px; /* adjust size as needed */
+
+  font-weight: normal; /* makes the rest of the text normal */
+
+}
+
+
+
+h1 strong {
+
+  font-weight: bold; /* only "Asif" is bold */
+
+}
+
+
+
+The user wants their navigation bar to change into tabs when they scroll down. They have provided their full HTML and CSS code, including a scrolled class in their CSS and the JavaScript logic to add/remove this class on scroll.
+
+1. Analyze the user's request: The user wants a "tab-like" appearance for the navbar when they scroll. This is a design preference.
+
+2. Analyze the provided code:
+
+HTML: The HTML is correct. It has the .navbar and the JavaScript snippet to handle the scroll event.
+
+CSS: The CSS defines a .navbar and a .navbar.scrolled class. The .scrolled class is where the user's requested "tabs" styling should go. The current scrolled class just changes the background and box-shadow.
+
+JavaScript: The provided JavaScript is already correct and implements the exact logic needed: it adds the .scrolled class when the user scrolls down more than 50px and removes it when they scroll back up.
+
+3. Identify the missing piece: The user's CSS for the .scrolled state doesn't actually make the navbar look like "tabs." The current styling for .navbar a is a good starting point, but the .scrolled state needs to modify the links to look more like tabs.
+
+4. Formulate the solution:
+
+The core issue is the styling for the scrolled state. The JavaScript and HTML are already correct.
+
+I need to provide CSS code that modifies the navbar a and navbar a.active links specifically when the .navbar.scrolled class is present.
+
+To make them look like tabs, I'll recommend adding a border to the links and giving them a distinct background color, and changing the font color to create a clear visual separation.
+
+I will also show how to apply a different border or background to the active tab to highlight the current section.
+
+I will present this solution as a complete, updated block of CSS to be added to their stylesheet.css.
+
+I will explain the purpose of each new CSS rule.
+
+5. Structure the response:
+
+Start with a clear confirmation that their current HTML and JavaScript are set up correctly.
+
+Explain that the key is to add more specific CSS rules for the "tab" look.
+
+Provide the new, updated CSS code for the navbar.scrolled and the links within it (.navbar.scrolled a).
+
+Use comments in the code to explain each part.
+
+Explain the changes in a clear, easy-to-understand way below the code block. This includes explaining why certain properties like border-radius and background-color are used.
+
+Conclude by stating that they can adjust the colors and values to match their desired aesthetic.Your existing HTML and JavaScript are already set up perfectly to handle the scrolling effect! All you need to do is update your CSS file to define the "tab-like" appearance you want to see when the page is scrolled.
+
+The key is to add more specific styles for the navigation links (.navbar a) and the active link (.navbar a.active) when the .navbar element has the .scrolled class.
+
+Here is the updated CSS code you can use. You can simply replace your existing /* Sticky Navbar */ and /* Navbar links */ sections with the code below.
+
+CSS
+
+/* Sticky Navbar - Original & Scrolled States */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px 0;
+  background-color: transparent;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: 'Lato', sans-serif;
+  transition: all 0.3s ease; /* Smooth transition for all changes */
+}
+
+/* Navbar after scroll - New "tab" container style */
+.navbar.scrolled {
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 8px 0; /* Make the navbar a little more compact */
+}
+
+/* Navbar links - Original Style */
+.navbar a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #333;
+  padding: 8px 16px;
+  position: relative;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+/* Navbar links after scroll - "Tabs" Style */
+.navbar.scrolled a {
+  background-color: transparent;
+  color: #555;
+  border: 1px solid transparent;
+  border-radius: 5px 5px 0 0; /* Rounded top corners, square bottom */
+  transition: all 0.3s ease;
+}
+
+/* Active link after scroll - Highlighted "Tab" */
+.navbar.scrolled a.active {
+  background-color: #f0f0f0; /* Tab background color */
+  color: #007BFF;
+  border: 1px solid #ccc; /* Border around the active tab */
+  border-bottom: none; /* No border at the bottom to connect to the content */
+  font-weight: bold;
+}
+
+/* Hover effect on scrolled tabs */
+.navbar.scrolled a:hover {
+  background-color: #f0f0f0;
+  color: #007BFF;
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Hide the underline effect when scrolled */
+.navbar.scrolled a::after {
+  display: none;
+}
+
+/* Your other CSS below... */
+How These Changes Work
+.navbar.scrolled: This class is now more focused on the overall appearance of the navigation bar itself, making it slightly more compact by reducing the padding.
+
+.navbar.scrolled a: This rule applies only to the links when the navbar is scrolled. We've removed the ::after underline effect and added a border-radius to the top corners, which helps create the classic "tab" shape.
+
+.navbar.scrolled a.active: This is the most important part for the tab look. It specifically targets the active link (a.active) within the scrolled navbar, giving it a distinct background-color and a border. The border-bottom: none is a small detail that makes it look like the tab is seamlessly connected to the content below it.
+
+.navbar.scrolled a:hover: This gives a simple visual cue when a user hovers over a tab, like a subtle color change and a slight lift using transform.
+
+
+
+
+
+
+
+please update the entire css
+
+
+CSS
+
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
@@ -10,27 +775,52 @@ body {
   color: #333;
 }
 
-/* Sticky Navbar */
+/* Theme Icon - No changes here as it's not part of the core navbar tabs */
+.theme-icon {
+  font-size: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  color: #444;
+  transition: color 0.3s;
+}
+
+body.dark-mode .theme-icon {
+  color: #f1c40f; /* Yellowish in dark mode */
+}
+
+/* Sticky Navbar - Now handles both states with transitions */
 .navbar {
   display: flex;
   justify-content: center;
   gap: 30px;
   padding: 15px 0;
-  background-color:  transparent;
+  background-color: transparent; /* Default state */
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   font-family: 'Lato', sans-serif;
+  transition: all 0.3s ease; /* Smooth transition for all changes */
 }
 
-/* Navbar after scroll */
+/* Navbar after scroll - New "tab" container style */
 .navbar.scrolled {
-  background-color:  #fff;   /* solid background */
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 8px 0; /* Make the navbar a little more compact */
 }
 
-/* Navbar links */
+/* Dark Mode - Navbar */
+body.dark-mode .navbar {
+  background-color: #1e1e1e;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .navbar.scrolled {
+  background-color: #1e1e1e; /* Consistent dark background for scrolled state */
+}
+
+/* Navbar links - Now handles original, scrolled, and dark mode states */
 .navbar a {
   font-size: 18px;
   text-decoration: none;
@@ -41,11 +831,22 @@ body {
   border-radius: 5px;
 }
 
+/* Navbar links after scroll - "Tabs" Style */
+.navbar.scrolled a {
+  background-color: transparent;
+  color: #555;
+  border: 1px solid transparent;
+  border-radius: 5px 5px 0 0; /* Rounded top corners, square bottom */
+  transition: all 0.3s ease;
+}
+
+/* Hover effect for original navbar links */
 .navbar a:hover {
   background-color: #007BFF;
   color: #fff;
 }
 
+/* Underline effect for original navbar links */
 .navbar a::after {
   content: '';
   display: block;
@@ -62,10 +863,50 @@ body {
   width: 100%;
 }
 
-/* Active link */
+/* Active link for original navbar */
 .navbar a.active {
   font-weight: bold;
   color: #007BFF;
+}
+
+/* Hover effect on scrolled tabs */
+.navbar.scrolled a:hover {
+  background-color: #f0f0f0;
+  color: #007BFF;
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Active link after scroll - Highlighted "Tab" */
+.navbar.scrolled a.active {
+  background-color: #f0f0f0; /* Tab background color */
+  color: #007BFF;
+  border: 1px solid #ccc; /* Border around the active tab */
+  border-bottom: none; /* No border at the bottom to connect to the content */
+  font-weight: bold;
+}
+
+/* Hide the underline effect when scrolled */
+.navbar.scrolled a::after {
+  display: none;
+}
+
+/* Dark mode styles for navbar and links */
+.dark-mode .navbar a {
+  color: #eee;
+}
+
+.dark-mode .navbar.scrolled a {
+  color: #eee;
+}
+
+.dark-mode .navbar.scrolled a.active {
+  background-color: #2e2e2e;
+  border-color: #444;
+  color: #ffa500;
+}
+
+.dark-mode .navbar.scrolled a:hover {
+  background-color: #2e2e2e;
 }
 
 /* Smooth scrolling */
@@ -94,13 +935,13 @@ html {
 }
 
 .home-image {
-  flex: 0 0 200px;  /* fixed width for image */
+  flex: 0 0 200px; /* fixed width for image */
   display: flex;
-  justify-content: flex-end;  /* push image to right */
+  justify-content: flex-end; /* push image to right */
 }
 
 .home-image img {
-  width: 200px;      /* fixed width */
+  width: 200px; /* fixed width */
   height: auto;
   border-radius: 10px;
   display: block;
@@ -119,8 +960,8 @@ html {
 /* Publications */
 .publications-grid {
   display: flex;
-  flex-direction: column;  /* vertical layout */
-  gap: 30px;               /* spacing between publications */
+  flex-direction: column; /* vertical layout */
+  gap: 30px; /* spacing between publications */
 }
 
 .publication-item {
@@ -186,7 +1027,7 @@ html {
 .achievements-review {
   display: flex;
   flex-direction: column;
-  gap: 40px;    /* consistent spacing */
+  gap: 40px; /* consistent spacing */
 }
 
 .achievements ul,
@@ -202,11 +1043,11 @@ h2 {
 /* General button style for publications and top links */
 .btn {
   display: inline-block;
-  width: 100px;               /* fixed width for uniformity */
+  width: 100px; /* fixed width for uniformity */
   padding: 6px 12px;
   margin-right: 5px;
   background-color: #fff !important; /* white background */
-  color:   #550000 !important;             /* red bold text */
+  color: #550000 !important; /* red bold text */
   font-weight: bold !important;
   border: 2px solid #000 !important; /* black border */
   border-radius: 5px;
@@ -219,18 +1060,19 @@ h2 {
 
 .btn:hover {
   background-color: #000 !important; /* black background on hover */
-  color:   #550000 !important;             /* text stays red */
-  border-color: #000 !important;     /* black border */
+  color: #550000 !important; /* text stays red */
+  border-color: #000 !important; /* black border */
 }
+
 /* Buttons inside publications */
 .publication-text .btn {
   display: inline-block;
-  width: 100px;               /* fixed width */
+  width: 100px; /* fixed width */
   padding: 6px 12px;
   margin-right: 5px;
   background-color: #fff !important; /* force white background */
-  color:   #550000 !important;             /* force red text */
-  font-weight: bold !important;      /* bold text */
+  color: #550000 !important; /* force red text */
+  font-weight: bold !important; /* bold text */
   border: 2px solid #000 !important; /* black border */
   border-radius: 5px;
   text-decoration: none;
@@ -242,28 +1084,29 @@ h2 {
 
 .publication-text .btn:hover {
   background-color: #000 !important; /* black background on hover */
-  color:  #550000 !important;             /* text stays red */
-  border-color: #000 !important;     /* border stays black */
+  color: #550000 !important; /* text stays red */
+  border-color: #000 !important; /* border stays black */
 }
+
 .contact-icons a {
-  font-size: 36px;            /* increase icon size */
-  color: #8B0000;             /* dark red text color */
-  margin-right: 15px;         /* spacing between icons */
+  font-size: 36px; /* increase icon size */
+  color: #8B0000; /* dark red text color */
+  margin-right: 15px; /* spacing between icons */
   text-decoration: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 60px;                /* size of the circular border */
+  width: 60px; /* size of the circular border */
   height: 60px;
-  border: 2px solid #000;     /* black border */
-  border-radius: 50%;         /* makes it circular */
+  border: 2px solid #000; /* black border */
+  border-radius: 50%; /* makes it circular */
   transition: all 0.3s ease;
 }
 
 .contact-icons a:hover {
-  background-color: #f09228;  /* optional hover background */
-  color: #fff;                /* change icon color on hover */
-  transform: scale(1.1);      /* slightly enlarge on hover */
+  background-color: #f09228; /* optional hover background */
+  color: #fff; /* change icon color on hover */
+  transform: scale(1.1); /* slightly enlarge on hover */
 }
 
 
@@ -275,3 +1118,38 @@ h1 {
 h1 strong {
   font-weight: bold; /* only "Asif" is bold */
 }
+
+/* Dark Mode Overrides */
+body.dark-mode {
+  background-color: #121212;
+  color: #eee;
+}
+
+.dark-mode .btn {
+  background-color: #1e1e1e !important;
+  color: #ffdddd !important;
+  border-color: #eee !important;
+}
+
+.dark-mode .publication-item {
+  background-color: #1e1e1e;
+  border-color: #333;
+}
+
+.dark-mode .publication-text p a {
+  color: #ffa500;
+}
+
+.dark-mode .btn:hover {
+  background-color: #eee !important;
+  color: #550000 !important;
+}
+
+.dark-mode .contact-icons a {
+  background-color: transparent;
+  border-color: #eee;
+  color: #f09228;
+}
+
+
+
