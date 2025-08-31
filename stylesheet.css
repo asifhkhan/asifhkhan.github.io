@@ -1,692 +1,3 @@
-
-/* Fonts */
-
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
-
-
-
-body {
-
-  font-family: 'Courier New', Courier;
-
-  font-size: 18px;
-
-  line-height: 1.6;
-
-  margin: 0;
-
-  padding: 0;
-
-  color: #333;
-
-}
-
-
-
-/* Sticky Navbar */
-
-.navbar {
-
-  display: flex;
-
-  justify-content: center;
-
-  gap: 30px;
-
-  padding: 15px 0;
-
-  background-color:  transparent;
-
-  position: sticky;
-
-  top: 0;
-
-  z-index: 1000;
-
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-
-  font-family: 'Lato', sans-serif;
-
-}
-
-
-
-/* Navbar after scroll */
-
-.navbar.scrolled {
-
-  background-color:  #fff;   /* solid background */
-
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-
-}
-
-
-
-/* Navbar links */
-
-.navbar a {
-
-  font-size: 18px;
-
-  text-decoration: none;
-
-  color: #333;
-
-  padding: 8px 16px;
-
-  position: relative;
-
-  transition: all 0.3s ease;
-
-  border-radius: 5px;
-
-}
-
-
-
-.navbar a:hover {
-
-  background-color: #007BFF;
-
-  color: #fff;
-
-}
-
-
-
-.navbar a::after {
-
-  content: '';
-
-  display: block;
-
-  height: 2px;
-
-  width: 0;
-
-  background: #007BFF;
-
-  transition: width 0.3s;
-
-  position: absolute;
-
-  bottom: 0;
-
-  left: 0;
-
-}
-
-
-
-.navbar a:hover::after {
-
-  width: 100%;
-
-}
-
-
-
-/* Active link */
-
-.navbar a.active {
-
-  font-weight: bold;
-
-  color: #007BFF;
-
-}
-
-
-
-/* Smooth scrolling */
-
-html {
-
-  scroll-behavior: smooth;
-
-}
-
-
-
-/* Section container */
-
-.section-container {
-
-  max-width: 800px;
-
-  margin: 0 auto 40px auto;
-
-  padding: 20px;
-
-}
-
-
-
-/* Home section */
-
-.home-grid {
-
-  display: flex;
-
-  flex-wrap: wrap;
-
-  gap: 20px;
-
-  justify-content: space-between;
-
-  align-items: flex-start;
-
-}
-
-
-
-.home-text {
-
-  flex: 1 1 500px; /* text takes majority of width */
-
-}
-
-
-
-.home-image {
-
-  flex: 0 0 200px;  /* fixed width for image */
-
-  display: flex;
-
-  justify-content: flex-end;  /* push image to right */
-
-}
-
-
-
-.home-image img {
-
-  width: 200px;      /* fixed width */
-
-  height: auto;
-
-  border-radius: 10px;
-
-  display: block;
-
-}
-
-
-
-.contact-links a {
-
-  margin-right: 10px;
-
-  color: #1772d0;
-
-  text-decoration: none;
-
-}
-
-
-
-.contact-links a:hover {
-
-  color: #f09228;
-
-}
-
-
-
-/* Publications */
-
-.publications-grid {
-
-  display: flex;
-
-  flex-direction: column;  /* vertical layout */
-
-  gap: 30px;               /* spacing between publications */
-
-}
-
-
-
-.publication-item {
-
-  display: flex;
-
-  gap: 20px;
-
-  border: 1px solid #ddd;
-
-  padding: 15px;
-
-  border-radius: 8px;
-
-  align-items: flex-start;
-
-}
-
-
-
-.publication-text {
-
-  flex: 1;
-
-}
-
-
-
-.publication-text strong {
-
-  font-weight: 700;
-
-  font-size: 16px;
-
-}
-
-
-
-.publication-text p a {
-
-  color: #1772d0;
-
-  text-decoration: none;
-
-  margin-right: 10px;
-
-}
-
-
-
-.publication-text p a:hover {
-
-  color: #f09228;
-
-}
-
-
-
-/* Hover video effect */
-
-.hover-video .video-container {
-
-  position: relative;
-
-  width: 160px;
-
-  height: 160px;
-
-  flex-shrink: 0;
-
-}
-
-
-
-.hover-video .video-container video {
-
-  position: absolute;
-
-  top: 0;
-
-  left: 0;
-
-  width: 100%;
-
-  height: 100%;
-
-  opacity: 0;
-
-  transition: opacity 0.5s ease;
-
-}
-
-
-
-.hover-video .video-container:hover video {
-
-  opacity: 1;
-
-}
-
-
-
-.hover-video .video-container img {
-
-  display: block;
-
-  width: 100%;
-
-  height: 60%;
-
-  border-radius: 1px;
-
-  border: 3px solid #007BFF; /* add a blue border around the image */
-
-  box-sizing: border-box; /* ensures the border stays inside the container */
-
-}
-
-
-
-/* Achievements & Review Activities */
-
-.achievements-review {
-
-  display: flex;
-
-  flex-direction: column;
-
-  gap: 40px;    /* consistent spacing */
-
-}
-
-
-
-.achievements ul,
-
-.review-activities ul {
-
-  padding-left: 20px;
-
-  margin-top: 10px;
-
-}
-
-
-
-h2 {
-
-  margin-bottom: 10px;
-
-}
-
-
-
-/* General button style for publications and top links */
-
-.btn {
-
-  display: inline-block;
-
-  width: 100px;               /* fixed width for uniformity */
-
-  padding: 6px 12px;
-
-  margin-right: 5px;
-
-  background-color: #fff !important; /* white background */
-
-  color:   #550000 !important;             /* red bold text */
-
-  font-weight: bold !important;
-
-  border: 2px solid #000 !important; /* black border */
-
-  border-radius: 5px;
-
-  text-decoration: none;
-
-  font-size: 14px;
-
-  text-align: center;
-
-  transition: all 0.3s ease;
-
-  box-sizing: border-box;
-
-}
-
-
-
-.btn:hover {
-
-  background-color: #000 !important; /* black background on hover */
-
-  color:   #550000 !important;             /* text stays red */
-
-  border-color: #000 !important;     /* black border */
-
-}
-
-/* Buttons inside publications */
-
-.publication-text .btn {
-
-  display: inline-block;
-
-  width: 100px;               /* fixed width */
-
-  padding: 6px 12px;
-
-  margin-right: 5px;
-
-  background-color: #fff !important; /* force white background */
-
-  color:   #550000 !important;             /* force red text */
-
-  font-weight: bold !important;      /* bold text */
-
-  border: 2px solid #000 !important; /* black border */
-
-  border-radius: 5px;
-
-  text-decoration: none;
-
-  font-size: 14px;
-
-  text-align: center;
-
-  transition: all 0.3s ease;
-
-  box-sizing: border-box;
-
-}
-
-
-
-.publication-text .btn:hover {
-
-  background-color: #000 !important; /* black background on hover */
-
-  color:  #550000 !important;             /* text stays red */
-
-  border-color: #000 !important;     /* border stays black */
-
-}
-
-.contact-icons a {
-
-  font-size: 36px;            /* increase icon size */
-
-  color: #8B0000;             /* dark red text color */
-
-  margin-right: 15px;         /* spacing between icons */
-
-  text-decoration: none;
-
-  display: inline-flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  width: 60px;                /* size of the circular border */
-
-  height: 60px;
-
-  border: 2px solid #000;     /* black border */
-
-  border-radius: 50%;         /* makes it circular */
-
-  transition: all 0.3s ease;
-
-}
-
-
-
-.contact-icons a:hover {
-
-  background-color: #f09228;  /* optional hover background */
-
-  color: #fff;                /* change icon color on hover */
-
-  transform: scale(1.1);      /* slightly enlarge on hover */
-
-}
-
-
-
-
-
-h1 {
-
-  font-size: 36px; /* adjust size as needed */
-
-  font-weight: normal; /* makes the rest of the text normal */
-
-}
-
-
-
-h1 strong {
-
-  font-weight: bold; /* only "Asif" is bold */
-
-}
-
-
-
-The user wants their navigation bar to change into tabs when they scroll down. They have provided their full HTML and CSS code, including a scrolled class in their CSS and the JavaScript logic to add/remove this class on scroll.
-
-1. Analyze the user's request: The user wants a "tab-like" appearance for the navbar when they scroll. This is a design preference.
-
-2. Analyze the provided code:
-
-HTML: The HTML is correct. It has the .navbar and the JavaScript snippet to handle the scroll event.
-
-CSS: The CSS defines a .navbar and a .navbar.scrolled class. The .scrolled class is where the user's requested "tabs" styling should go. The current scrolled class just changes the background and box-shadow.
-
-JavaScript: The provided JavaScript is already correct and implements the exact logic needed: it adds the .scrolled class when the user scrolls down more than 50px and removes it when they scroll back up.
-
-3. Identify the missing piece: The user's CSS for the .scrolled state doesn't actually make the navbar look like "tabs." The current styling for .navbar a is a good starting point, but the .scrolled state needs to modify the links to look more like tabs.
-
-4. Formulate the solution:
-
-The core issue is the styling for the scrolled state. The JavaScript and HTML are already correct.
-
-I need to provide CSS code that modifies the navbar a and navbar a.active links specifically when the .navbar.scrolled class is present.
-
-To make them look like tabs, I'll recommend adding a border to the links and giving them a distinct background color, and changing the font color to create a clear visual separation.
-
-I will also show how to apply a different border or background to the active tab to highlight the current section.
-
-I will present this solution as a complete, updated block of CSS to be added to their stylesheet.css.
-
-I will explain the purpose of each new CSS rule.
-
-5. Structure the response:
-
-Start with a clear confirmation that their current HTML and JavaScript are set up correctly.
-
-Explain that the key is to add more specific CSS rules for the "tab" look.
-
-Provide the new, updated CSS code for the navbar.scrolled and the links within it (.navbar.scrolled a).
-
-Use comments in the code to explain each part.
-
-Explain the changes in a clear, easy-to-understand way below the code block. This includes explaining why certain properties like border-radius and background-color are used.
-
-Conclude by stating that they can adjust the colors and values to match their desired aesthetic.Your existing HTML and JavaScript are already set up perfectly to handle the scrolling effect! All you need to do is update your CSS file to define the "tab-like" appearance you want to see when the page is scrolled.
-
-The key is to add more specific styles for the navigation links (.navbar a) and the active link (.navbar a.active) when the .navbar element has the .scrolled class.
-
-Here is the updated CSS code you can use. You can simply replace your existing /* Sticky Navbar */ and /* Navbar links */ sections with the code below.
-
-CSS
-
-/* Sticky Navbar - Original & Scrolled States */
-.navbar {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  padding: 15px 0;
-  background-color: transparent;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  font-family: 'Lato', sans-serif;
-  transition: all 0.3s ease; /* Smooth transition for all changes */
-}
-
-/* Navbar after scroll - New "tab" container style */
-.navbar.scrolled {
-  background-color: #fff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  padding: 8px 0; /* Make the navbar a little more compact */
-}
-
-/* Navbar links - Original Style */
-.navbar a {
-  font-size: 18px;
-  text-decoration: none;
-  color: #333;
-  padding: 8px 16px;
-  position: relative;
-  transition: all 0.3s ease;
-  border-radius: 5px;
-}
-
-/* Navbar links after scroll - "Tabs" Style */
-.navbar.scrolled a {
-  background-color: transparent;
-  color: #555;
-  border: 1px solid transparent;
-  border-radius: 5px 5px 0 0; /* Rounded top corners, square bottom */
-  transition: all 0.3s ease;
-}
-
-/* Active link after scroll - Highlighted "Tab" */
-.navbar.scrolled a.active {
-  background-color: #f0f0f0; /* Tab background color */
-  color: #007BFF;
-  border: 1px solid #ccc; /* Border around the active tab */
-  border-bottom: none; /* No border at the bottom to connect to the content */
-  font-weight: bold;
-}
-
-/* Hover effect on scrolled tabs */
-.navbar.scrolled a:hover {
-  background-color: #f0f0f0;
-  color: #007BFF;
-  transform: translateY(-2px); /* Slight lift effect */
-}
-
-/* Hide the underline effect when scrolled */
-.navbar.scrolled a::after {
-  display: none;
-}
-
-/* Your other CSS below... */
-How These Changes Work
-.navbar.scrolled: This class is now more focused on the overall appearance of the navigation bar itself, making it slightly more compact by reducing the padding.
-
-.navbar.scrolled a: This rule applies only to the links when the navbar is scrolled. We've removed the ::after underline effect and added a border-radius to the top corners, which helps create the classic "tab" shape.
-
-.navbar.scrolled a.active: This is the most important part for the tab look. It specifically targets the active link (a.active) within the scrolled navbar, giving it a distinct background-color and a border. The border-bottom: none is a small detail that makes it look like the tab is seamlessly connected to the content below it.
-
-.navbar.scrolled a:hover: This gives a simple visual cue when a user hovers over a tab, like a subtle color change and a slight lift using transform.
-
-
-
-
-
-
-
-please update the entire css
-
-
-CSS
-
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
@@ -699,52 +10,27 @@ body {
   color: #333;
 }
 
-/* Theme Icon - No changes here as it's not part of the core navbar tabs */
-.theme-icon {
-  font-size: 20px;
-  margin-right: 10px;
-  cursor: pointer;
-  color: #444;
-  transition: color 0.3s;
-}
-
-body.dark-mode .theme-icon {
-  color: #f1c40f; /* Yellowish in dark mode */
-}
-
-/* Sticky Navbar - Now handles both states with transitions */
+/* Sticky Navbar */
 .navbar {
   display: flex;
   justify-content: center;
   gap: 30px;
   padding: 15px 0;
-  background-color: transparent; /* Default state */
+  background-color:  transparent;
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   font-family: 'Lato', sans-serif;
-  transition: all 0.3s ease; /* Smooth transition for all changes */
 }
 
-/* Navbar after scroll - New "tab" container style */
+/* Navbar after scroll */
 .navbar.scrolled {
-  background-color: #fff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  padding: 8px 0; /* Make the navbar a little more compact */
+  background-color:  #fff;   /* solid background */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-/* Dark Mode - Navbar */
-body.dark-mode .navbar {
-  background-color: #1e1e1e;
-  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
-}
-
-body.dark-mode .navbar.scrolled {
-  background-color: #1e1e1e; /* Consistent dark background for scrolled state */
-}
-
-/* Navbar links - Now handles original, scrolled, and dark mode states */
+/* Navbar links */
 .navbar a {
   font-size: 18px;
   text-decoration: none;
@@ -755,22 +41,11 @@ body.dark-mode .navbar.scrolled {
   border-radius: 5px;
 }
 
-/* Navbar links after scroll - "Tabs" Style */
-.navbar.scrolled a {
-  background-color: transparent;
-  color: #555;
-  border: 1px solid transparent;
-  border-radius: 5px 5px 0 0; /* Rounded top corners, square bottom */
-  transition: all 0.3s ease;
-}
-
-/* Hover effect for original navbar links */
 .navbar a:hover {
   background-color: #007BFF;
   color: #fff;
 }
 
-/* Underline effect for original navbar links */
 .navbar a::after {
   content: '';
   display: block;
@@ -787,50 +62,10 @@ body.dark-mode .navbar.scrolled {
   width: 100%;
 }
 
-/* Active link for original navbar */
+/* Active link */
 .navbar a.active {
   font-weight: bold;
   color: #007BFF;
-}
-
-/* Hover effect on scrolled tabs */
-.navbar.scrolled a:hover {
-  background-color: #f0f0f0;
-  color: #007BFF;
-  transform: translateY(-2px); /* Slight lift effect */
-}
-
-/* Active link after scroll - Highlighted "Tab" */
-.navbar.scrolled a.active {
-  background-color: #f0f0f0; /* Tab background color */
-  color: #007BFF;
-  border: 1px solid #ccc; /* Border around the active tab */
-  border-bottom: none; /* No border at the bottom to connect to the content */
-  font-weight: bold;
-}
-
-/* Hide the underline effect when scrolled */
-.navbar.scrolled a::after {
-  display: none;
-}
-
-/* Dark mode styles for navbar and links */
-.dark-mode .navbar a {
-  color: #eee;
-}
-
-.dark-mode .navbar.scrolled a {
-  color: #eee;
-}
-
-.dark-mode .navbar.scrolled a.active {
-  background-color: #2e2e2e;
-  border-color: #444;
-  color: #ffa500;
-}
-
-.dark-mode .navbar.scrolled a:hover {
-  background-color: #2e2e2e;
 }
 
 /* Smooth scrolling */
@@ -859,13 +94,13 @@ html {
 }
 
 .home-image {
-  flex: 0 0 200px; /* fixed width for image */
+  flex: 0 0 200px;  /* fixed width for image */
   display: flex;
-  justify-content: flex-end; /* push image to right */
+  justify-content: flex-end;  /* push image to right */
 }
 
 .home-image img {
-  width: 200px; /* fixed width */
+  width: 200px;      /* fixed width */
   height: auto;
   border-radius: 10px;
   display: block;
@@ -884,8 +119,8 @@ html {
 /* Publications */
 .publications-grid {
   display: flex;
-  flex-direction: column; /* vertical layout */
-  gap: 30px; /* spacing between publications */
+  flex-direction: column;  /* vertical layout */
+  gap: 30px;               /* spacing between publications */
 }
 
 .publication-item {
@@ -951,7 +186,7 @@ html {
 .achievements-review {
   display: flex;
   flex-direction: column;
-  gap: 40px; /* consistent spacing */
+  gap: 40px;    /* consistent spacing */
 }
 
 .achievements ul,
@@ -967,11 +202,11 @@ h2 {
 /* General button style for publications and top links */
 .btn {
   display: inline-block;
-  width: 100px; /* fixed width for uniformity */
+  width: 100px;               /* fixed width for uniformity */
   padding: 6px 12px;
   margin-right: 5px;
   background-color: #fff !important; /* white background */
-  color: #550000 !important; /* red bold text */
+  color:   #550000 !important;             /* red bold text */
   font-weight: bold !important;
   border: 2px solid #000 !important; /* black border */
   border-radius: 5px;
@@ -984,19 +219,18 @@ h2 {
 
 .btn:hover {
   background-color: #000 !important; /* black background on hover */
-  color: #550000 !important; /* text stays red */
-  border-color: #000 !important; /* black border */
+  color:   #550000 !important;             /* text stays red */
+  border-color: #000 !important;     /* black border */
 }
-
 /* Buttons inside publications */
 .publication-text .btn {
   display: inline-block;
-  width: 100px; /* fixed width */
+  width: 100px;               /* fixed width */
   padding: 6px 12px;
   margin-right: 5px;
   background-color: #fff !important; /* force white background */
-  color: #550000 !important; /* force red text */
-  font-weight: bold !important; /* bold text */
+  color:   #550000 !important;             /* force red text */
+  font-weight: bold !important;      /* bold text */
   border: 2px solid #000 !important; /* black border */
   border-radius: 5px;
   text-decoration: none;
@@ -1008,29 +242,28 @@ h2 {
 
 .publication-text .btn:hover {
   background-color: #000 !important; /* black background on hover */
-  color: #550000 !important; /* text stays red */
-  border-color: #000 !important; /* border stays black */
+  color:  #550000 !important;             /* text stays red */
+  border-color: #000 !important;     /* border stays black */
 }
-
 .contact-icons a {
-  font-size: 36px; /* increase icon size */
-  color: #8B0000; /* dark red text color */
-  margin-right: 15px; /* spacing between icons */
+  font-size: 36px;            /* increase icon size */
+  color: #8B0000;             /* dark red text color */
+  margin-right: 15px;         /* spacing between icons */
   text-decoration: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 60px; /* size of the circular border */
+  width: 60px;                /* size of the circular border */
   height: 60px;
-  border: 2px solid #000; /* black border */
-  border-radius: 50%; /* makes it circular */
+  border: 2px solid #000;     /* black border */
+  border-radius: 50%;         /* makes it circular */
   transition: all 0.3s ease;
 }
 
 .contact-icons a:hover {
-  background-color: #f09228; /* optional hover background */
-  color: #fff; /* change icon color on hover */
-  transform: scale(1.1); /* slightly enlarge on hover */
+  background-color: #f09228;  /* optional hover background */
+  color: #fff;                /* change icon color on hover */
+  transform: scale(1.1);      /* slightly enlarge on hover */
 }
 
 
@@ -1042,38 +275,3 @@ h1 {
 h1 strong {
   font-weight: bold; /* only "Asif" is bold */
 }
-
-/* Dark Mode Overrides */
-body.dark-mode {
-  background-color: #121212;
-  color: #eee;
-}
-
-.dark-mode .btn {
-  background-color: #1e1e1e !important;
-  color: #ffdddd !important;
-  border-color: #eee !important;
-}
-
-.dark-mode .publication-item {
-  background-color: #1e1e1e;
-  border-color: #333;
-}
-
-.dark-mode .publication-text p a {
-  color: #ffa500;
-}
-
-.dark-mode .btn:hover {
-  background-color: #eee !important;
-  color: #550000 !important;
-}
-
-.dark-mode .contact-icons a {
-  background-color: transparent;
-  border-color: #eee;
-  color: #f09228;
-}
-
-
-
