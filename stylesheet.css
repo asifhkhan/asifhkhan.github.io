@@ -282,3 +282,85 @@ h1 {
 h1 strong {
   font-weight: bold; /* only "Asif" is bold */
 }
+
+
+/*  RESPONSIVE STYLES BELOW */
+@media (max-width: 768px) {
+
+  .home-grid {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-text {
+    flex: 1 1 auto;
+    width: 100%;
+  }
+
+  .home-image {
+    flex: 1 1 auto;
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .home-image img {
+    width: 80%;
+    max-width: 250px;
+  }
+
+  .publication-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .publication-text {
+    width: 100%;
+    text-align: justify;
+  }
+
+  .btn,
+  .publication-text .btn {
+    width: 80%;
+    max-width: 200px;
+    margin: 8px auto;
+    display: block;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .navbar a {
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  .contact-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .contact-icons a {
+    margin-right: 0;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  body {
+    font-size: 16px;
+  }
+}
